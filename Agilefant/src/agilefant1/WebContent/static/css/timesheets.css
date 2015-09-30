@@ -1,0 +1,162 @@
+.timesheetProduct {
+  margin-left: 0;
+  width: 100% !important;
+  border-color: #E09600;
+}
+.timesheetProduct .ui-widget-header {
+  background-image: url('../img/ui/ui-bg_gloss-wave_100_e09600_500x100.png') !important;  
+}
+
+.timesheetProject {
+  margin-left: 2%;
+  width: 98% !important;
+  border-color: #a070d2;
+}
+
+.timesheetProject .ui-widget-header {
+  background-image: url('../img/ui/ui-bg_gloss-wave_100_a070d2_500x100.png') !important;  
+}
+
+.timesheetIteration {
+  margin-left: 4%;
+  width: 96% !important;  
+}
+
+.timesheetStandaloneIteration {
+  width: 100% !important;
+  border-color: #333;  	
+}
+
+.timesheetStandaloneIteration .ui-widget-header {
+	background-image: url('../img/ui/ui-bg_gloss-wave_55_333333_500x100.png') !important;
+}
+
+.timesheet-backlog {
+  overflow: hidden;
+  margin-top: 1em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  min-height: 40px;
+}
+
+.timesheet-backlog .ui-widget-header {
+  border: none;
+  font-size: 12pt;
+  line-height: 22pt;
+  padding-left: 1em;
+  -webkit-border-radius: 9px 9px 0 0;
+  -moz-border-radius: 9px 9px 0 0;
+  border-radius: 9px 9px 0 0;
+}
+
+.timesheet-backlog .ui-widget-header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 30px;
+  overflow: hidden;  
+}
+
+.timesheet-backlog .ui-widget-header ul li {
+  display: inline-block;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.timesheet-backlog .ui-widget-header ul li.hoursum {
+  float: right;
+  font-weight: normal;
+  padding: 0 1em;
+  background: rgba(0, 0, 0, 0.15);
+  width: 100px;
+  border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+}
+
+.timesheet-hourEntryContainer {
+  margin: 0.5em 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 80% !important;
+}
+
+.timesheet-hourEntryContainer > ul > li {
+  line-height: 15pt;  
+}
+
+.timesheet-hourEntryContainer > ul > li:nth-child(even) {
+  background-color: #e0e0e0;  
+}
+
+
+
+ul.timesheet-content {
+  list-style-type: none;
+  white-space: nowrap;
+  margin: 0.5em;
+  padding: 0;
+}
+
+
+
+ul.timesheet-content > li > div {
+  display: inline-block;
+  width: 75%;
+  overflow:hidden;
+}
+
+ul.timesheet-content > li > div.hoursum {
+  width: 100px !important;
+  float: right;
+  padding: 0 1em;
+}
+
+
+
+.timesheet-closable {
+  display: none;  
+}
+
+.timesheetOpenListLink {
+  font-weight: bold;
+}
+
+.timesheetOpenListImage {
+  display: inline-block;
+  background-image: url('../img/plusminus.png');
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  width: 11px;
+  height: 11px;
+}
+.timesheetOpenListLink:hover .timesheetOpenListImage {
+  background-position: 100% 0%;
+}
+.timesheetOpenList-open .timesheetOpenListImage {
+  background-position: 0% 100%;  
+}
+.timesheetOpenList-open:hover .timesheetOpenListImage {
+  background-position: 100% 100%;  
+}
+
+.timesheetOpenListLink:hover {
+  color: #666;
+}
+
+.reportTable {
+  max-height: 15em;
+  overflow: auto;
+}
+
+.reportTable td {
+  margin: 0.2em 0.5em;  
+}
+
+
+

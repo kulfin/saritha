@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory name="hibernateSessionFactory">
+<!--
+we need the package mapping to make package-info.java work, but it
+won't map all the package classes
+-->
+<property name="org.hibernate.envers.store_data_at_delete">true</property>
+        
+<mapping package="fi.hut.soberit.agilefant.model" />
+
+<mapping class="fi.hut.soberit.agilefant.model.Assignment" />
+<mapping class="fi.hut.soberit.agilefant.model.Backlog" />
+<mapping class="fi.hut.soberit.agilefant.model.BacklogHistoryEntry" />
+<mapping class="fi.hut.soberit.agilefant.model.BacklogHourEntry" />
+<mapping class="fi.hut.soberit.agilefant.model.ExactEstimate" />
+<mapping class="fi.hut.soberit.agilefant.model.SignedExactEstimate" />
+<mapping class="fi.hut.soberit.agilefant.model.Iteration" />
+<mapping class="fi.hut.soberit.agilefant.model.IterationHistoryEntry" />
+<mapping class="fi.hut.soberit.agilefant.model.Label" />
+<mapping class="fi.hut.soberit.agilefant.model.Login" />
+<mapping class="fi.hut.soberit.agilefant.model.Product" />
+<mapping class="fi.hut.soberit.agilefant.model.Project" />
+<mapping class="fi.hut.soberit.agilefant.model.Setting" />
+<mapping class="fi.hut.soberit.agilefant.model.Story" />
+<mapping class="fi.hut.soberit.agilefant.model.StoryHourEntry" />
+<mapping class="fi.hut.soberit.agilefant.model.Task" />
+<mapping class="fi.hut.soberit.agilefant.model.TaskHourEntry" />
+<mapping class="fi.hut.soberit.agilefant.model.Team" />
+<mapping class="fi.hut.soberit.agilefant.model.User" />
+<mapping class="fi.hut.soberit.agilefant.model.Holiday" />
+<mapping class="fi.hut.soberit.agilefant.model.HolidayAnomaly" />
+<mapping class="fi.hut.soberit.agilefant.model.AgilefantRevisionEntity" />
+<mapping class="fi.hut.soberit.agilefant.model.WhatsNextEntry" />
+<mapping class="fi.hut.soberit.agilefant.model.WhatsNextStoryEntry" />
+<mapping class="fi.hut.soberit.agilefant.model.StoryRank" />
+<mapping class="fi.hut.soberit.agilefant.model.AgilefantWidget" />
+<mapping class="fi.hut.soberit.agilefant.model.WidgetCollection" />
+<mapping class="fi.hut.soberit.agilefant.model.StoryAccess" />
+</session-factory>
+</hibernate-configuration>

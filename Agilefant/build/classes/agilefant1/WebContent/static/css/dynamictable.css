@@ -1,0 +1,913 @@
+
+.dynamictable {
+ /* border: 1px solid #ccc;*/
+  width: auto;
+  overflow: hidden;
+  margin-top: 5px;
+  padding: 0.2em;
+}
+
+/** when sorting is disabled the ocupacity shoudnt change */
+.dynamictable .ui-state-disabled { 
+	opacity: 1; !important;
+	filter:Alpha(Opacity=100) !important;
+}
+.dynamictable-caption {
+	font-weight:bold;
+	height:19px;
+	padding: 4px 0 0 0.5em;
+	font-size: 12pt;
+}
+
+.dynamictable-caption div {
+  margin-top: 2px;  
+}
+
+.dynamictable-caption-block {
+  height: 25px !important;
+  width: auto !important;
+}
+
+.dynamictable-row {
+	margin: 4px 1% 4px 1%;
+	padding: 2px 0 0 0;
+  width: 98%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.dynamictable-vertical .dynamictable-row {
+  border: none;
+  background: transparent;  
+}
+
+.dynamictable .dynamictable-row .dynamictable-cell {
+  min-height: 15px;
+  max-height: 999em;
+  min-width: 30px;
+  display: block;
+  width: auto;
+  float: left;
+  margin: 0 0.2% -2000em 0;
+  padding: 0 0 2000.2em 0.2%;
+  overflow: hidden;
+  border: none;
+  background: transparent !important;
+}
+
+.dynamicTableRow-drag {
+	background-color: #dddddd;	
+	border: 1px solid #aaaaaa;
+}
+.dynamictable-cell span {
+    
+}
+
+.dynamictable-sortimg {
+  background-image: url('../img/sort.png');
+  background-position: 0% 0%;
+  width: 8px;
+  height: 8px;
+  float: left;
+  margin: 5px 2px 0 0; 
+}
+
+.dynamictable-sortimg-up {
+  background-position: 100% 0%;
+}
+.dynamictable-sortimg-down {
+  background-position: 0% 100%;
+}
+
+.dynamictable-filterimg {
+  background-image: url('../img/filter_large.png');
+  background-position: 0% 0%;
+  width: 50px;
+  height: 16px;
+  float: left;
+  margin-left: 0.5em;
+  display: block; 
+  cursor: pointer;
+}
+
+.dynamictable-filterimg-active {
+  background-position: 0% 100%;
+}
+
+.dynamictable-placeholder {
+  margin: 3px 2px 3px 2px;
+  background-color: #ffffdd;
+  border: 1px dashed #666;
+  height: 3em;
+  width: 98%;
+}
+
+.dynamictable-header {
+  font-weight: bold;
+  background-color: #d6dde5 !important;
+  
+}
+.dynamictable-header .dynamictable-cell {
+  padding-left: 4px;
+}
+
+.dynamictable-header .dynamictable-cell a, .dynamictable-header .dynamictable-cell span {
+  white-space: nowrap;
+}
+
+.dynamictable-even .dynamictable-cell {
+  background-color: #eee;  
+}
+
+.dynamictable-odd .dynamictable-cell {
+  background-color: #fff;
+}
+
+.dynamictable-padder {
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.backlogActions {
+  position: absolute;
+  z-index: 100;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 100px;
+  background: white;
+}
+
+.actionCell {
+	background-color: #fcfcfc;
+	border: 1px solid black;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.actionCell li {
+  float: none !important;
+  display: list-item !important;
+  position: static !important;
+	list-style: none;
+	margin: 3px !important;
+	padding: 0 !important;
+	min-width: 70px;
+	text-align: left;
+}
+
+.actionCell li.actionCell-rowaction-disabled {
+	/*color: #AAA;*/
+	display: none !important;
+}
+
+.actionCell li:hover {
+  background: transparent url(../img/gradient.png) 80% 60% repeat-x;
+  cursor: pointer;
+}  
+
+div.gear {
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/gear.png');
+  background-position: 0%;
+  background-repeat: no-repeat;
+}
+
+.actionColumn, .actionColumn div{
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.invalidValue {
+  background-color: #FF6666;
+}
+.dynamictable-cell .cellError {
+    position: relative !important;
+    overflow: visible !important;
+    height: 2em;
+    width: 40em;
+}
+.validationError {
+  width: 150px;
+  background-color: #FFFF66;
+  border: 1px solid #FFFFFF;
+}
+
+
+li.dynamictable-captionaction {
+  background-color: #fff !important;
+  background-repeat: repeat-x !important;
+  background-image: url('../img/button_fade.png') !important;
+  background-position: 100% 3px !important;
+  float: left !impotant;
+  border: 1px solid #666;
+  margin-right: 1em;
+  padding: 1px 7px 1px 2px !important;	
+  width: 105px;
+  color: black;
+  font-weight: normal;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  text-align: center;
+  font-size: 10pt;
+}
+
+.dynamictable-captionaction:hover {
+  float: left !impotant;
+  cursor: pointer !important;
+  color: black;
+  border-color: black;
+  background: #eee !important;
+}
+
+.dynamictable-captionaction div.create {
+  background-image: url('../img/create_new.png');
+  background-position: 0%;
+}
+.dynamictable-captionaction:hover div.create {
+  background-image: url('../img/create_new.png');
+  background-position: 100%;
+}
+.dynamictable-captionaction div.show {
+	background-image:url(../img/open_close.png);
+	background-position:0 0;
+}
+.dynamictable-captionaction:hover div.show {
+	background-image:url(../img/open_close.png);
+	background-position:100% 0;
+}
+.dynamictable-captionaction div.hide {
+	background-image:url(../img/open_close.png);
+	background-position:0 100%;
+}
+.dynamictable-captionaction:hover div.hide {
+	background-image:url(../img/open_close.png);
+	background-position:100% 100%;
+}
+.dynamictable-captionaction div.effort {
+	background-image:url(../img/timesheets_new.png);
+	background-position:0 0;
+}
+.dynamictable-captionaction:hover div.effort {
+	background-image:url(../img/timesheets_new.png);
+	background-position:100% 0;
+}
+
+.dynamictable a:link, .dynamictable a:visited, .backloglink a:link, .backloglink a:visited {
+  color: #1E5EEE;
+  text-decoration: none;
+}
+
+.dynamictable a:hover, .dynamictable a:active, .backloglink a:hover, .backloglink a:active {
+  color: #e50;
+}
+
+.instructionText {
+	font-weight: bold;
+}
+
+.dynamictable-captionactions {
+  margin-top: 0px;
+  padding-left: 0px;
+  display: inline;
+  list-style: none;
+  list-style-type: none;
+  width: 60%;
+  overflow: visible;
+  height: 1px;
+}
+
+.dynamictable-expand {
+	background-image:url(../img/open_close.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	height:20px;
+	width:20px;
+	margin-top: 2px;
+	margin-right: 4px;
+	float: right;
+}
+.dynamictable-collapse {
+	background-image:url(../img/open_close.png);
+	background-position:0 100%;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	height:20px;
+	width:20px;
+	margin-top: 2px;
+	margin-right: 4px;
+	float: right;
+}
+.dynamictable-expand:hover {
+  background-position: 100% 0;  
+}
+.dynamictable-collapse:hover {
+  background-position: 100% 100%;  
+}
+
+.tabMenu {
+  width: 15%;
+  /*height: 100%;*/
+  min-height: 15px;
+  max-height: 999em;
+  min-width: 30px;
+  display: block;
+  width: 12%;
+  float: left !important;
+  background-color: #fff;
+  margin: 0 0.2% -1000em 0;
+  padding: 0 0 1000.5em 0.2%;
+  overflow: hidden;
+  border: none;
+		
+}
+.cellTabs .ui-tabs-nav li {
+	float: none !important;
+	background-image: url('../img/vert_tabs.png') !important;
+	background-position: 100% 51% !important;
+	border: 1px solid #bba !important;
+}
+
+.cellTabs .ui-tabs-nav li.ui-state-active {
+  background-position: 100% 87% !important;
+}
+
+.cellTabs .ui-tabs-nav li:hover {
+  background-position: 100% 15% !important;
+}
+
+.cellTabs .ui-tabs-nav li a {
+  background: none !important;  
+}
+
+.cellTabs .ui-tabs-nav li a span {
+	text-align: right;
+	background: none !important;
+}
+.tabData {
+  min-height: 15px;
+  max-height: 999em;
+  min-width: 30px;
+  width: 86%;
+  float: left !important;
+  margin: 0 0.2% -1000em 0;
+  padding: 0 0 1000.5em 0.2%;
+  overflow: hidden;
+  border: none;
+}
+.drophover {
+	opacity: .4;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity=40);
+}
+
+.actionColumn .edit, button.dynamics-button {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius: 5px;
+	background-color:#fff;
+	background-image: url('../img/button_fade.png');
+	background-position: 0 3px;
+	background-repeat: repeat-x;
+	
+	border: 1px solid #999;
+	font-size: 80%;
+	height: 1.4em !important;
+	padding-left:3px;
+	padding-right:3px;
+	white-space:nowrap !important;
+	width:2.8em;
+	text-align: center;
+	
+	cursor: pointer;
+}
+button.dynamics-button {
+  min-height: 1.8em;
+  min-width: 6em;
+  margin-right: 0.5em;
+}
+button.dynamics-button:focus, button.dynamics-button:hover {
+  background: #eed;
+}
+
+.actionColumn .edit:hover {
+	color: #e50;
+}
+
+.dynamictable-dragHandle {
+  cursor: move;  
+}
+
+.dynamictable-dragHandle span {
+  cursor: text;  
+}
+
+.taskState {
+	display: block;
+	width: 65px;
+	padding: 1px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	font-size: 80%;
+}
+.inlineTaskState {
+  font-size: 80%;
+  border: 1px solid rgba(0,0,0,0.3);
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  padding: 0 0.3em !important;
+  display: inline;
+  width: 1em;
+  text-align: center;
+}
+.storyState {
+	display: block;
+	width: 65px;
+	padding: 1px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	font-size: 80%;
+}
+
+.inlineStoryState {
+  font-size: 10px;
+  -moz-border-radius: 999px;
+  -webkit-border-radius: 999px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.3);
+  padding: 3px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  line-height: 10px;
+  text-align: center;
+  
+}
+.taskStateNOT_STARTED, .storyStateNOT_STARTED {
+	background-color: #dddddd;
+}
+.taskStateSTARTED, .storyStateSTARTED {
+	background-color: #ffdd88;
+}
+.taskStatePENDING, .storyStatePENDING {
+	background-color: #66ddff;
+}
+.taskStateBLOCKED, .storyStateBLOCKED {
+	background-color: #e33;
+	color: #eee;
+}
+
+.taskStateIMPLEMENTED, .storyStateIMPLEMENTED {
+	background-color: #66ff66;
+}
+.taskStateDONE, .storyStateDONE {
+	background-color: #00bb44;
+	color: #eee;
+}
+
+.taskStateDEFERRED, .storyStateDEFERRED {
+	background-color: #000000;
+	color: white;
+}
+
+
+.dynamictable .dynamictable-row .description-cell {
+	min-height: 0px !important;	
+/*	max-height: 15em !important;*/
+/*	overflow: auto !important;*/
+}
+.dynamictable .dynamictable-row .description-cell > span {
+	margin-left: 8%;
+	color: #666;	
+	margin-right: 4%;
+	font-size: 8pt;
+	color: #555;
+	display: block;
+} 
+.taskTable {
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.dynamictable-editable > span:hover {
+	opacity: 0.8; !important;
+  filter:Alpha(Opacity=80) !important;
+}
+.dynamictable-editclue {
+	width: 16px;
+	height: 1em;
+	float: left;
+	background-image:url(../img/edit.png);
+}
+
+/**
+ * Iteration page styles
+ */
+
+.iteration-story-table .dynamictable-row,
+.project-iteration-table .dynamictable-row,
+.dailywork-story-table .dynamictable-row {
+  background: #e9eeff;
+  border-color: rgb(180, 180, 204);  
+}
+
+.iteration-story-unranked-table .dynamictable-row {
+  background: #ffffff;
+  border-color: rgb(180, 180, 204);  
+}
+
+.dailywork-story-table-row {
+  background: #e9eeff;
+  border-color: rgb(180, 180, 204);  
+}
+
+.dailywork-story-table-row-parent {
+  background: #e9eeff !important;
+  border-color: rgb(180, 180, 204);  
+}
+
+.story-task-container .dynamictable {
+  border: none;  
+}
+.story-task-container .ui-widget-header {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 11pt;
+}
+.task-table .dynamictable-row {
+  background: #eee;  
+}
+.dynamictable-row .task-data span {
+  margin: 0.5em;
+}
+
+.story-table {
+  background: white;  
+}
+.tasksWithoutStory-table .ui-widget-header {
+  background: #666666 url(../img/ui/ui-bg_gloss-wave_55_333333_500x100.png) 50% 50% repeat-x;
+  border-color: #999;
+}
+
+.label-item {
+	color: #2b3840;
+	font-size: 13px;
+	font-family: arial, verdana, sans-serif;
+	text-shadow: 0 1px 1px #fff;
+	background-color: #ddeefe;
+	/*background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddeefe), to(#bfe0f1));*/
+	border: 1px solid #acc3ec;
+	border-top-color: #c0d9e9;
+	padding: 1px 7px 1px 7px;
+	border-radius: 12px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	box-shadow: 0 1px 1px #e4edf2;
+	/*
+	-webkit-box-shadow: 0 1px 1px #e4edf2;
+	-moz-box-shadow: 0 1px 1px #e4edf2;
+	*/
+	margin-right: 2px;
+	float : left;
+}
+
+.as-close {
+	float: right;
+	margin: 1px 0 0 7px;
+	padding: 0 2px;
+	cursor: pointer;
+	color: #5491be;
+	font-family: "Helvetica", helvetica, arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #fff;
+	-webkit-transition: color .1s ease-in;
+}
+
+
+.label-cancel, .label-ok {
+	float: right;
+	position: relative;
+	top: 2px;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+	border: 1px solid #999;
+	background-color: #f3f3f3;
+	cursor: pointer;
+}
+.label-cancel {
+	margin: 2px 1px;
+	padding: 3px;
+}
+
+.label-ok {
+	padding: 2px 3px 4px;
+	margin: 2px 1px 2px 4px;
+}
+
+.label-add {
+	color: #2b3840;
+	font-size: 13px;
+	font-family: "Lucdia Grande", arial, sans-serif;
+	text-shadow: 0 1px 1px #fff;
+	background-color: #f3f3f3;
+	border: 1px solid #acc3ec;
+	border-top-color: #c0d9e9;
+	padding: 1px 10px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	box-shadow: 0 1px 1px #e4edf2;
+	-webkit-box-shadow: 0 1px 1px #e4edf2;
+	-moz-box-shadow: 0 1px 1px #e4edf2;
+	float : left;
+	cursor: pointer;
+}
+
+.label-add:hover {
+	color: #ee5500;
+}
+/**
+ * Project page styles
+ */
+.project-story-table .dynamictable-row {
+  background-color: #edf;
+}
+.project-iteration-storylist {
+  background: white;
+  width: 95% !important;
+  margin-left: 5%;  
+}
+.project-iteration-storylist .dynamictable-row {
+  background-color: #eee;  
+}
+
+div.project-iteration-metrics {
+	margin: 2em;
+}
+
+table.project-iteration-metrics {
+	width: 300px;
+}
+
+.project-iteration-metrics .iterationRowMetricsBar {
+	height: 20px;
+}
+
+.project-iteration-metrics-storystates {
+  border: 1px solid #777;
+  width: 300px;
+}
+
+.project-iteration-metrics-storystates div {
+	float: left;
+}
+
+.project-iteration-row-metrics-left div {
+	float: left;
+	width: 300px;	
+}
+
+.project-iteration-row-metrics-right div {
+	float: right;
+	width: 300px;
+}
+.project-iteration-metrics-timeleft {
+	border: 1px solid #777;
+	width: 300px;
+}
+
+.project-iteration-metrics-timeleft div {
+	float: left;
+}
+
+/**
+ * Product page styles
+ */
+.product-story-table .dynamictable-row {
+  background-color: #fec;
+}
+.product-project-table .dynamictable-row {
+  background-color: #edf;
+}
+
+.backlog-id-link {
+  font-size: 80%;
+  text-align: right;
+  cursor: pointer;
+}
+
+.backlog-id-link span {
+  color: #1E5EEE;
+  margin-right: 1ex;
+  text-decoration: underline;
+}
+
+.story-id-link {
+  font-size: 100%;
+  text-align: right;
+  cursor: pointer;
+}
+
+.story-id-link span {
+  color: #1E5EEE;
+  margin-right: 1ex;
+  text-decoration: underline;
+}
+
+/**
+ * Dashboards page styles
+ */
+.portfolio-ranked-project-table .dynamictable-row {
+  background-color: #edf;
+}
+.portfolio-unranked-project-table .dynamictable-row {
+  background-color: #edf; 	
+}
+
+/**
+ * Administration styles
+ */
+.administration-team-table .dynamictable-row,
+.administration-user-table .dynamictable-row   {
+  background: #eee;
+}
+
+.administration-team-table ul {
+  list-style-type: none;  
+}
+
+
+
+
+.dynamictable .dynamictable-row .text-editor {
+  cursor: text;  
+}
+.dynamictable-header > .story-row,
+.dynamictable-header > .story-task,
+.dynamictable-header > .story-responsibles,
+.dynamictable-header > .story-estimate {
+	background-color: #fff !important;
+}
+.dynamictable-header > .task-row {
+	background-color: #fff !important; 
+}
+.dynamictable-tasklist-cell {
+  background-color: #eee;  
+}
+
+.sum-column {
+  color: #666;  
+}
+
+
+
+
+div.ruler {
+  background-image: url('../img/hr_left.png');
+  background-repeat: none;
+  background-color: transparent;
+  height: 1px;
+  width: 95%;
+}
+
+
+
+
+
+
+
+div.loadingStories { 
+	background-color:#EEEEEE;
+	border:1px solid #666666;
+	font-size:10pt;
+	font-style:italic;
+	height:55px;
+	margin:15px 5px 0;
+	padding:30px 0 0 10px;
+	width:100%;
+}
+
+ul.storyTabs {
+   height: 21px;
+}
+
+div.corner-border {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #A6C9E2;
+	/* margin-left: -8px;*/
+}
+
+div.dynamictable-tailer {
+	height: 20px;
+}
+
+/*
+ * VALIDATION ERRORS
+ */
+ul.dynamics-error-container {
+  width: 80%;
+  margin: 0.4em 0 0.2em;
+  padding: 0.3em 0 0.3em 2em;
+  background-color: #fcc;
+  color: #a33;
+  list-style-type: disc;
+  
+  border-width: 3px;
+  border-color: #c55;
+  border-style: solid;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.dynamics-validation-invalid input, .dynamics-validation-invalid select, input.validation-error {
+  border: 1px solid #c55;
+  background-color: #fcc;
+}
+
+.deleteForm p {
+	font-weight: bold;
+}
+
+.deleteForm ul {
+	list-style: none;
+	padding-left: 20px;
+}
+
+.bottom-margin {
+  margin-bottom: 1em;
+}
+
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #ccc;
+	background-color: #ffffce;
+	padding: 0.1em;
+}
+
+/**
+ * My work
+ * context links
+ */
+a.context, span.context {
+  color: ;
+  font-size: 80%;
+  white-space: nowrap;
+}
+
+.context-story {
+  margin-left: 2ex;  
+}
+
+.context-task {
+  margin-left: 3ex;
+}
+
+
+.inline-labeleditor {
+  vertical-align: middle;
+  display: inline-block;
+  width: 75%;
+}
+span.labelsText {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.inline-labeleditor ul {
+  width: 100% !important;
+}
+
+.required-input:after {
+  content: "*";
+  color: #E75428;
+  margin-left: 2px;
+}
+
+.dynamictable-editable-field:before {
+  content:url('../img/triangle.png');
+  position: relative;
+  top: -3px;
+}

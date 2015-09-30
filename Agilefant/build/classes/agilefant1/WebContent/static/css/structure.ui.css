@@ -1,0 +1,583 @@
+/**
+ * CSS attributes for styling the ui.
+ *
+ * Contents:
+ *  - Menu collapsing
+ *  - Left hand menu
+ *  - Backlog info tables
+ *  - Create new menu
+ *  - Edit existing menu
+ *  - Navigation tabs
+ *  - Footer
+ *  - My work styles
+ *  - Search by text box
+ */ /**
+ * OVERALL LAYOUT
+ */ /**
+ * Should be used for all main level blocks. 
+ */
+.structure-main-block {
+  min-width: 750px;
+  width: 98% !important;
+}
+
+/**
+ * MENU HIDING 
+ */
+.menu-collapsed #navigationTabsWrapper {
+  margin-left: 3em;
+}
+
+.menu-collapsed #menuWrapper, .menu-collapsed #resizableMenuWrapper {
+  width: 1em !important;
+  overflow: hidden;
+}
+
+.menu-collapsed #createAndSearchWrapper {
+  width: 1em !important;
+  visibility: hidden;
+}
+
+.menu-collapsed #menuToggleControl {
+  margin-left: 0em !important;
+}
+
+.menu-collapsed #menuContent {
+  position: relative;
+  left: -100px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.menu-collapsed #bodyWrapper {
+  margin: 0 0 0 1em !important;
+}
+
+.menu-collapsed #menuToggleControl {
+  background-position: 100% 0%;
+}
+
+.menu-collapsed #menuToggleControl:hover {
+  background-position: 100% 100%;
+}
+
+.menu-collapsed #quickSearchLinkText, .menu-collapsed #quickRecentLink {
+  display: none;
+}
+
+/**
+ * LEFT HAND MENU
+ */
+#menuContent ul {
+  margin: 0;
+  padding: 1em;
+}
+
+#menuContent ul li {
+  list-style-type: none;
+}
+
+#menuAccordion .ui-accordion-header {
+  margin-bottom: 1px;
+}
+
+#menuAccordion .ui-state-active {
+  border-bottom-color: #d0e6f6 !important;
+}
+
+#menuAccordion .ui-accordion-header .ui-icon {
+  left: auto;
+}
+
+#menuAccordion .ui-accordion-header a {
+  padding: 0.3em 0.3em 0.3em 1.5em;
+}
+
+#menuAccordion .ui-accordion-content {
+  padding: 0 0 1em 0;
+}
+
+/* BACKLOG INFO TABLES */
+.structure-main-block ul.backlogTabs {
+  height: 24px !important;
+}
+
+ul.backlogTabs li a {
+  height: 20px;
+}
+
+ul.backlogTabs li a img {
+  vertical-align: middle;
+}
+
+.structure-main-block div.details {
+  min-height: 200px;
+}
+
+.structure-main-block th {
+  background-color: white;
+}
+
+/**
+ * CREATE NEW -menu
+ */
+#createNewMenuWrapper {
+  margin-right: 1em;
+  float: right;
+}
+
+ul#createNewMenu {
+  margin: 0;
+  padding: 5px 0;
+  position: absolute;
+  border: 1px solid #aaa;
+  background: #fcfcfc;
+  top: 7.8em;
+  left: 1em;
+  width: 9em;
+  z-index: 300;
+  overflow: hidden;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#createNewMenuLink img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+
+ul#createNewMenu li {
+  height: 1.5em;
+  background-color: transparent;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 0.2em;
+}
+
+ul#createNewMenu li:hover {
+  background-color: #ccc;
+}
+
+ul#createNewMenu a,ul#createNewMenu span.inactive {
+  text-decoration: none !important;
+  display: block;
+  padding-left: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+ul#createNewMenu li.separator,ul#createNewMenu li.separator:hover {
+  display: block;
+  background: #aaa;
+  width: 100%;
+  height: 1px;
+  padding: 0;
+  margin: 5px 0;
+}
+
+/**
+ * NAVIGATION TABS
+ */
+#navigationTabsWrapper {
+  margin-left: 16em;
+  float: left;
+  height: 21px;
+}
+
+#navigationTabsWrapper ul,#navigationTabsWrapper ul li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#navigationTabsWrapper ul li {
+  border-width: 1px 1px 0 1px;
+  border-color: #A6C9E2;
+  border-style: solid;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  /*
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  */
+  padding: 0;
+  margin: 0 0.5em 0 0;
+  background: #dfeffc url("../img/ui/ui-bg_glass_85_dfeffc_1x400.png")
+    repeat-x scroll 50% 50%;
+  display: block;
+  height: 20px;
+  float: left;
+}
+
+#navigationTabsWrapper ul li.navitab-selected {
+  background: #fff;
+  height: 21px;
+}
+
+#navigationTabsWrapper ul li a {
+  font-weight: bold !important;
+  color: #2E6E9E !important;
+  margin: 0 0.7em;
+}
+
+#navigationTabsWrapper ul li.navitab-selected a {
+  color: #E17009 !important;
+}
+
+#navigationTabsWrapper ul li span img {
+  position: relative;
+  top: 2px;
+}
+
+/**
+ * JQUERY TABS FIXES
+ */
+.ui-tabs-nav {
+  height: 23px !important;
+}
+
+/**
+ * jQuery labelify
+ */
+input.inputHighlight {
+  color: #999;
+}
+
+/**
+ * jQuery autosuggest
+ */
+input.as-input-starttext {
+  color: #999;
+}
+
+/**
+ * FOOTER STYLES
+ */
+#footerText a:link,#footerText a:visited,#footerText a:active {
+  color: #444;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#footerText a:hover {
+  color: #e50;
+}
+
+div#footerText label {
+  cursor: pointer;
+}
+
+#menuAccordion .ui-accordion-header,#menuAccordion .ui-accordion-content
+  {
+  margin-right: 2px !important;
+  margin-left: 2px !important;
+}
+
+#backlogMenuTree {
+  overflow: auto !important;
+}
+/**
+ * SMALL BURNDOWN
+ */
+div.smallBurndown {
+  border-width: 2px;
+  border-style: outset;
+  border-color: #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: -5px -5px;
+  height: 75px;
+  width: 100px;
+  margin: 0 0 1em 3.2em;
+}
+
+/**
+ * SETTINGS PAGE
+ */
+.settings-table {
+  border-collapse: collapse;
+  white-space: nowrap;
+  width: 500px;
+}
+
+.setting-table tr {
+  width: 100%;
+}
+
+.settings-table tr:nth-child(even) {
+  background: #eee;
+}
+
+.settings-table tr:nth-child(odd) {
+  background: #fff;
+}
+
+.settings-table td {
+  background: transparent;
+  width: 50%;
+  border: 1px solid #999;
+  text-align: left;
+  padding: 0.2em 0.5em;
+  height: 2em;
+}
+
+.settings-table tr td:first-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+/**
+ * WARNING / NOTE BOX
+ */
+.warning-note {
+  width: 30em;
+  border: 1px solid rgb(240, 192, 0);
+  background: rgb(255, 255, 206);
+  padding: 1em;
+  margin: 0.3em;
+}
+
+/**
+ * QUICK SEARCH BOX
+ */
+.searchByText {
+  border-style: inset;
+  border-width: 2px;
+  border-color: #ccc;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  background-image: url('../img/search_small.png');
+  background-repeat: no-repeat;
+  background-position: 5px 45%;
+  width: 20ex;
+  font-size: 10pt;
+}
+
+.searchByText input {
+  float: left;
+  border: none;
+  margin: 0 0 0 3ex;
+  width: 14ex;
+}
+
+.searchByText .clearButton {
+  position: relative;
+  right: 0;
+  float: right;
+  margin: 0;
+  padding: 0;
+  color: #666;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.searchByText .clearButton:hover {
+  color: #000;
+}
+
+/**
+ * LOAD COLORS
+ */
+.load-maximum {
+  background-color: rgba(150, 8, 8, 0.7);
+}
+
+.load-critical {
+  background-color: rgba(224, 17, 2, 0.7);
+}
+
+.load-optimal-high {
+  background-color: rgba(245, 221, 57, 0.7);
+}
+
+.load-optimal-low {
+  background-color: rgba(9, 144, 14, 0.7);
+}
+
+.load-low {
+  background-color: rgba(130, 180, 244, 0.7);
+}
+
+/**
+ * AUTOCOMPLETE
+ */
+ul.ui-autocomplete {
+  max-width: 500px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height:400px;
+}
+
+ul.ui-autocomplete li {
+  white-space: nowrap;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.ui-autocomplete li a {
+  display: block;
+  padding: 0.3em;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * QUICK SEARCH BOX
+ */
+.quickSearchBox {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: none;
+  padding: 0.3em;
+  margin: 2px;
+}
+
+.quickSearchBox input {
+  width: 15ex;
+}
+
+.ui-autocomplete-category {
+  font-weight: bold;
+  padding: .2em .4em;
+  margin: .8em 0 .2em;
+  line-height: 1.5;
+}
+
+#quickSearchLink img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+
+ul.quickSearchAutocompleteMenu {
+  max-height: 35em;
+  overflow-y: auto;
+  max-width: 700px;
+}
+
+ul.quickSearchAutocompleteMenu .bottomBorder {
+  border-bottom: 1px solid #ccc;
+}
+
+ul.quickSearchAutocompleteMenu .topBorder {
+  border-top: 1px solid #ccc;
+}
+
+ul.quickSearchAutocompleteMenu li {
+  border: none;
+  cursor: pointer !important;
+}
+
+ul.quickSearchAutocompleteMenu li a {
+  display: inline-block;
+  height: 18px;
+  padding: 2px;
+  width: auto;
+  height: 100%;
+  vertical-align: middle;
+}
+
+ul.quickSearchAutocompleteMenu li span.categoryName {
+  display: inline-block;
+  border-right: 1px solid #ccc;
+  width: 10ex;
+  height: 22px;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: right;
+  padding: 0 5px;
+}
+
+/**
+ * BUTTONS
+ */
+input.dynamics-button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  background-color: #fff;
+  background-image: url('../img/button_fade.png');
+  background-position: 0 3px;
+  background-repeat: repeat-x;
+  min-height: 1.8em;
+  min-width: 6em;
+  margin-right: 0.5em;
+  padding: 3px 5px;
+  white-space: nowrap !important;
+  font-size: 80%;
+  text-align: center;
+  cursor: pointer;
+}
+
+input.dynamics-button:focus,input.dynamics-button:hover {
+  background: #eed;
+}
+
+/**
+ * OVERLAY FOR POSITION:RELATIVE BLOCKS
+ */
+.loadingOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: none;
+}
+.loadingOverlay > .overlay {
+  background-color: #999999;
+  position: absolute;
+  z-index: 1500;
+  opacity: 0.5;
+  filter: alpha(opacity = 50);
+  border: 1px solid #666666;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -1px;
+  text-align: center;
+  vertical-align: middle;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.loadingOverlay > .pleaseWait {
+  border: 1px solid #ccc;
+  z-index: 1501;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5%;
+  background-color: white;
+  padding-right: 0.5em;
+  color: #666;
+}
+
+.loadingOverlay > .pleaseWait > img {
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -1,0 +1,179 @@
+/*
+ * CSS for Agilefant's widget dashboards.
+ */
+.widgetContainer {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.widgetList {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 200px;
+  list-style-type: none;
+  position: relative;
+}
+
+.widget {
+  background: white;
+  display: block;
+  min-width: 350px;
+  max-height: 350px;
+  margin: 10px 0 0;
+  padding: 0;
+  border: 1px solid #A6C9E2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 9pt;
+  width: 95%;
+  overflow: hidden;
+  position: relative;
+}
+
+.widget-overlay {
+  display: none;
+  
+  background-color: #999;
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  
+  border-radius:         3px;
+  -moz-border-radius:    3px;
+  -webkit-border-radius: 3px;
+}
+
+.widget-overlay>div {
+  border: 1px solid #ccc;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5%;
+  padding: 3px 5px 3px 0;
+  background-color: white;
+  color: #666;
+}
+
+.widget-overlay > div > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.widget-placeholder {
+  min-width: 350px;
+  width: 95%;
+  height: 100px;
+  margin: 10px 0 0;
+  padding: 0;
+  border: 1px dashed #ccc;
+  background: whiteSmoke;
+}
+
+.widgetHeader {
+  border: 1px solid #A6C9E2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin: 2px;
+  background: #DFEFFC;
+  vertical-align: middle;
+}
+
+.realWidget .widgetHeader>div {
+  cursor: move;
+}
+
+.widgetHeader ul {
+  display: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.realWidget .widgetHeader ul {
+  display: block;
+}
+
+.widgetHeader ul li {
+  list-style-type: none;
+  font-weight: bold;
+  display: inline-block;
+  float: right;
+  width: 13px;
+  height: 13px;
+  margin: 0 2px;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid transparent;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.widgetHeader ul li:hover {
+  color: #666;
+  background: whiteSmoke;
+  border-color: #ccc;
+}
+
+.widgetContent {
+  margin: 2px 5px;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.widgetContent .expandable {
+  display: hidden; /* Expandable content hidden by default */
+}
+
+.staticWidget button,.createNewWidget td {
+  font-size: 100% !important;
+}
+
+.controlLink {
+  border: 1px solid transparent;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  padding: 0 5px;
+}
+
+.controlLink:hover {
+  border-color: #ccc;
+}
+
+.controlLink span {
+  line-height: 24pt;
+  vertical-align: middle;
+}
+
+.controlLink span.plusSign {
+  font-size: 24pt;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.controlLink:hover span.plusSign {
+  color: #aaa;
+}
+
+.privatePortfolios option {
+  color: #2E6E9E;
+}
+
+.widget-top-info {
+  margin-bottom: 1em;
+  color: #666;
+  font-size: 8pt;
+}

@@ -1,0 +1,625 @@
+Agilefant 3.5.4
+Release notes
+2015-07-03
+--
+
+Please spend a couple of minutes to register your organization at
+http://tinyurl.com/agilefant-registration-2013
+
+If you need support for your open source Agilefant version, we also offer support via the Agilefant development team. See more details at http://agilefant.com/pricing/open-source-version-support/?utm_source=rel_notes&utm_campaign=3.5.4
+
+Getting a support contract is also a great way to support Agilefant development efforts.
+
+That helps us keep Agilefant open source forever.!
+
+Agilefant is now also available as a hosted cloud version at
+http://agilefant.com/sign-up/
+
++--------------------+
+|     CHANGESET      |
++--------------------+
+
+Changes from 3.5.3
+2015-07-03
+Bug fixes:
++ Fix endless loop when loading iteration burndown 
+
+Changes from 3.5.2
+2015-02-23
+Bug fixes:
++ Fix burnup and burndown graphs (were not working at all on some servers)
++ Security fix: Prevent non-admins from changing admin value
++ Fix database import (on Windows Google Chrome there was "Content-Type not allowed" error)
++ Fix leaf stories tab: show story labels and task spent effort immediately (without modifying the story or task)
++ Fix left menu to show all backlogs if the backlogs list is long
++ Fix removing selected backlog in create new menu
+
+Usability improved:
++ My work, Reporting, and Dashboards Automatically enabled for new and existing accounts
++ Admin users can now see all backlogs, even if his team(s) does not have access rights to the backlog
++ When creating new user, add the user by default to all teams if creator is admin, or to creator's teams if creator is non-admin
++ Moving stories from one backlog to another speeded up
++ Renamed Daily Work tab to My Work
++ Renamed Portfolio & Dashboards tab to Dashboards
++ Renamed Timesheets tab to Reporting
+
+Changes from 3.5.1
+2014-05-02
++ Fixed problem related to Firefox 29: dailywork and iteration views were not loading
+
+Changes from 3.5
+2014-04-07
++ Fixed Java 8 compatibility problem
+
+Changes from 3.4
+2014-04-03
+
+New features and improvements:
++ Password hashing changed to Bcrypt
++ Search includes strings from from backlog/story/task descriptions
++ Speeded up search
++ Increased search results limit to 500
++ Speeded up queries related to spent effort entries and timesheet reports
++ New tasks are now added to the top of the task list
++ Non-admins can now create other non-admin users from the users page
++ Added explicit reference id links for tasks
++ Added story task ids to timesheets' excel export
++ Added filtering by responsible initials to project's story tree and leaf stories
++ Made the sidebar resizable
++ Sidebar open/close button now stays always visible
++ You can now choose time zone when generating timesheet reports
++ Added search for backlog/story/task id
++ Added sum of left and spent hours to project's Iteration tab
++ Added effort spent for project total hours to project metrics
+
+Bug fixes:
++ When clicking on scrollbar, prevent blur event which was causing auto-save for description field
++ Fixed problems with database import
++ Added 'object not found' page when backlog is not found
++ Fixed showing standalone iterations in timesheets for non-admins
++ Fix to timesheets: show hours only from standalone iterations that the user can access
++ Removed max results limit when retrieving standalone iterations in timesheets page
++ Show standalone iterations in Project planning for non-admin users based on their access rights
++ Fixed spent effort to work when current date is last week of the year
++ Fixed selecting a day in spent effort when the year changes in middle of week
++ Made weekly spent effort's weekly hours dependent on the user's time zone
++ Made weekly spent effort's daily hour entry list dependent on the user's time zone
++ Do not fill backlog automatically when creating iteration in product page
++ Fix iteration excel export: take substring of strings over 32767 characters
+
+Changes from 3.3.3
+2013-11-05
+
+Usability improved:
++ Calculate from all backlogs when no backlogs are selected on the Timesheets page
++ Changed Timesheets default interval from Today to All past entries
++ Fill backlog or iteration field automatically in Create new dialog if user is on backlog or iteration page
++ Show ‘Filters’ text in the filter image in list views (project leaf stories and iteration views)
++ Help pages to open in new window
++ Dashboards now created from a button instead of a select menu + minor text and positioning changes
++ Newly created backlog now opens automatically in the left hand backlog tree after it has been created via the Create new button
++ Parent story now displayed in the project leaf stories list
++ Show ‘(none)’ instead of project name in iteration dropdown to remove story from an iteration in the Project leaf stories list view
++ Changed the button that opens / closes stories in list views to plus/minus
++ Changed the link from Agilefant logo to Daily work (was pointing at www.agilefant.org)
++ Selected menu item in left hand Administration menu highlighted
++ Removed Recent link from top left menu (unused feature), restructured create new and search links
++ Added dropdown arrow in autocomplete boxes
++ Display  ’No items found’ message when text typed to autocomplete does not match anything in team, user or story parent selection
++ Shortened footer height
++ Enabled autoclose when clicking outside bubble popup
++ User settings: Removed change password button, password can now be changed using a text field
++ All custom portfolios are now public
++ Show tasks in project’s Leaf stories tab
++ Removed Administration tab (Administration is still accessible from left menu)
++ Added scrollbar to middle area so that the header, footer and left menu do not move when the page is scrolled
++ Stories can now be edited on the Project planning view on the product level
++ Show stories and tasks in daily work as long as they are not done, even if they belong to project or iteration that has ended
++ Added Create new story button to daily work’s My story queue
++ Added create new project, iteration and story links to the product Roadmap tab
++ ‘Backlog’ auto-filled when creating projects and stories in the Roadmap tab
++ Newly created projects, iterations and stories (via the Create new -dialog) populate automatically to the current view
++ Keep sessions active to prevent the feeling of suddenly being logged out when returning after a long period of inactivity
++ Highlighted editable text fields
++ Highlighted required fields in Create new dialogs
++ Show all possible choices (teams, users, backlogs, etc. ) when clicking auto-complete input fields
++ Simplified Create new -dialogs by removing baseline load, planned size, story value, and labels
++ Added tutorial video links to help page
++ Renamed Dashboard (formerly known as the Portfolio) tab to Portfolio & Dashboards
++ Renamed custom portfolios as dashboards and dashboard widgets as metrics
++ Renamed Assignees as Project assignees or Iteration assignees
++ Renamed ‘Started’ to ‘In progress’ and its abbreviation ‘S’ to ‘I’
++ Renamed Roadmap tab to Project planning
++ Renamed Breakdown as Story tree
++ Renamed the All backlogs accordion as Backlogs
++ Renamed ES as Spent and EL as Left
++ Renamed Context to Iteration for tasks without story
++ Renamed My stories to Story queue in daily work
++ Text changes to edit user page
++ Highlight the active backlog name in Backlogs menu
++ Moved standalone iterations as separate tree in Backlogs menu
++ Moved create new menu to left side
++ Removed My stories in iterations from left menu
++ Show add and remove all buttons in team selection when creating new user
++ Removed original estimate field from story lists
++ When creating new team, the default choice for access rights is ‘all’
+
+Bug fixes:
++ Prevent nonadmins from creating users that belong to teams that the nonadmin user does not belong to
++ Burndown with just Spent effort wasn’t shown
++ Show user’s weekly hours as hours instead of minutes also for non-admin users
+
+Changes from 3.3.2
+2013-08-29
+Bug fixes:
++ Non-admin users no longer allowed to create admin users (gasp!)
++ Select iteration autocomplete box now shows only iterations that the user has access to
++ Infinite loop when fetching story metrics prevented
++ A bug in new wersion check comparison fixed
++ Backlog access code refactored
+
++ Small UX improvements
+  + Renamed 'Story queue' in left hand side accordion => 'My stories'
+
+Changes from 3.3.1
+2013-08-15
+Enhancements:
++ Support hotline - hosted users can now chat with Agilefant Headquarters from their account
+
+Usability improved:
++ Help page rewritten, with links to Agilefant User Guide and FAQ
++ Login name is now automatically generated based on email
++ Daily work shows a 'loading' marker when loading data
++ Upon logging into a fresh, newly installed Agilefant or Cloud account, open the 'All backlogs' accordion section by default
++ Keyboard shortcut to show the tasks of a story
++ Focus goes to username on the login page (so you can just press enter to login)
+
+Bug fixes:
++ Vertical ordering of stories in Breakdown was broken; fixed
++ In some cases story ranks broke when moving stories between iterations; fixed (contribution by JBazzo)
++ A story that has children sometimes erroneously showed up in project leaf stories list; fixed (contribution by JBazzo)
++ Newly created custom portfolio view widgets did not show up without refreshing; fixed
++ Problems rendering the list of teams (requested at forum); fixed
++ Tasks in standalone iterations did not always show up in search; fixed
++ Effort spent in deferred stories did not show up in the Daily work Story queue; fixed
+
+
+Changes from 3.3
+2013-06-07
+Bug fixes:
++ Java 6 compatibility - version 3.3 required Java 7
++ Fixed Nullpointerexception when clicking story in standalone iteration
++ Fixed task sort order bug
++ Corrected a bug in the parsing of the double value which depends on the current Locale
++ Fixed bug in exampledb.sql - only affected those who initialized database with version 3.3 exampledb.sql
++ Refactoring
+
+Enhancements:
++ Added possibility to enable/disable import database
+
+Changes from 3.2
+2013-05-31
+Enhancements:
++ Splitting unfinished stories in iterations made easier (Edit->Extract unfinished)
++ A small red star displays if there's a newer Agilefant version available for download
++ Export database changed from an SQL dump into a JSON dump; it no longer contains a history of all changes made
++ You can now import a JSON dump database on the Admin tab; the new items do not overwrite pre-existing data
+
+A more verbose description of the new features can be read from:
+http://agilefant.freeforums.org/post1857.html
+
+Bug fixes:
++ DOM now updated when disabling / enabling users
++ Couldn't create stories into iterations from Create new->Story menu (previously, the search only included products and projects)
++ Added connection validation to prevent MySQL timeouts
++ Fixed a bug that in some cases produced huge errors to agilefant.log
++ Creating the readonly user required for sharing iterations as readonly now automatic when starting Agilefant on an empty database
++ Refactoring
+
+Changes from 3.1.1 to 3.2
+2013-04-17
++ Improvements to Daily Work
++ Renamed My Work Queue => Task queue
++ Renamed My Stories => Story queue
++ You can now use the Story queue to plan what stories you take on next across all your iterations, projects and products (works like the task queue)
++ Improvements to user rights
++ Non-admin users can now access the portfolio view and rank all the projects their teams have access to
+  + Non-admin users can create new users to their teams
++ Bug fixes and small UX improvements
++ Story points in breakdown points always calculated correctly
++ Stories in projects and products with you as responsible for one or more non-done tasks are now visible in daily work
++ Create new -> Iteration: default end date = sysdate + 2 weeks
++ Navigation to parent stories now possible from Work Queue context bubbles
++ UX improvements to effort spent -dialog:
++ If delta to last logged entry > 8h => no ES autofill
++ Focus to close button upon saving EL
++ Stories in projects, products, and iterations with you as responsible for one or more tasks are now visible in daily work
++ Iteration velocity now calculated as story points / day
++ Hibernate updated to version 4
+
+Changes from 3.1 to 3.1.1
+2013-03-01
++ Bug-fixes:
+  + Fixed servlet context config (was causing "Could not create and/or set value back on to object" errors)
+  + Fixed shared read-only iteration links
+
+Changes from 3.0.3 to 3.1
+2013-02-27
++ Improvements to roadmapping and release planning
+  + The work breakdown view loads now much faster!
+  + Nodes' points' now display the greater of (child items' points vs. their own points)
+  + Nodes story points now show branch completion in terms of story points
+  + Story info bubble shows the total effort spent in branch
+  + Filtering works based on iteration name also (and not just backlog name)
+  + Sum of ES in child stories calculated to StoryInfoBubble  
+  + You can now navigate to parent stories from iteration view story hierarchy bubble  
+  + Bug fixed: Upon hitting Esc in the Story info bubble, the breakdown node "disappeared"
++ Improvements to access rights
+  + Bug fixed: Non-accessible standalone iterations no longer show up in all products' leaf stories view
+  + Non-admin users can now create standalone iterations, with access rights for their own teams
+  + Non-admin users can now create products, with access rights for their own teams
+  + Non-admin users can now view the Daily Work of those in their teams
++ Build manager changed from Ant to Maven
++ Small UX improvements
+  + Dialog for logging spent effort
+    + Doesn't lose focus upon changing user
+    + Daily total spent effort now refreshes upon deleting an effort entry
+  + More understandable help text when opening an empty daily work page
+  + Fixed problem with saving certain national characters
+  + Inverted positions of Value and Points in StoryInfoBubble
+  + Expanded accepted effort formats; now accepts .5, 30 min, and 0.5h
++ Database export failure in Cloud fixed
++ Technical changes
+  + Added database migration library (Flyway)
+  + Switched logging to SLF4J + Logback
+  + Updated most libraries
+  + Changed the way Agilefant is configured (using an XML file)
+
+Changes from 3.0.2.1 to 3.0.3
+2012-12-29
++ Workflow improvements to logging spent effort:
+  + The dialog automatically autofills ES with the delta from the last entry logged by the user
+  + Upon saving an effort entry, focus automatically to 'Close' button 
+    => If you log spent effort 'as you go', you can just hit 2x <enter> and you're done!
++ Story tree: Changing a child story as started automatically changes all its parent stories as started (adpated from code by Javier Bazzocco)
++ Sort by Iteration in Project Backlog view works again
++ Year-end bug in spent effort -scroller fixed
++ Move to Backlog -dialog: focus to text field upon dialog opening
++ Create new product and iteration dialogs: added text that warns that newly created products / standalone iterations seem to 'disappear' if
+  the user does not have access rights to them
++ Create team -dialog:
+  + After selecting users for a new team, focus to 'Add all products to team' dropdown
+  + Default values for 'Add all products to team' and 'Add all standalone iterations to team' changed to 'No'
++ Registration link fixed to point to the correct registration form
+
+Changes from 3.0.2 to 3.0.2.1
+2012-12-21
++ fixed missing </font> tags in hyperlink-keyboard shortcuts in case they would cause problems in some browser/OS combination
+
+Changes from 3.0.1 to 3.0.2
+2012-12-21
++ Added hyperlink-keyboard shortcuts to some commonly used operations:
+  + Task and story state, responsibles, effort left, original estimate, effort spent
+  + spent effort, add child, add sibling, delete in the story
+  + Select users in the Team creation dialog
++ See http://agilefant.freeforums.org/how-to-enable-the-keyboard-shortcuts-t346.html 
+  on how to effectively use the keyboard shortcuts!   
++ Iteration and Product creation dialogs now read 'Project' and 'Product' (respectively) instead of 'Parent'
++ Rewrote a couple of error messages to be more comprehensible
+
+Changes from 3.0.0 to 3.0.1
+2012-11-09
++ Bug fixes:
+  + Iteration-to-iteration story moves from the breakdown view no longer break story ranks (#1518) 
++ New database upgrade script 300-301 to fix broken iteration storyranks caused by Agilefant versions 3.x-3.0.0 (#1459 and #1524)
++ Updated version of exampledb.sql
+
+
+Changes from 3.0 beta 2 to 3.0.0
+2012-10-15
++ spent effort can now be logged directly to any story from the breakdown view
++ Bug fixes:
+  + No burndown if sprint start date <= creation date
+  + exampledb.sql works also on case-sensitive environments like Linux
+
+Changes from 3.0 beta 1 to 3.0 beta 2
+2012-08-22
++ Bug fixes:
+  + #1201: Email notification implemented by https://github.com/jumarkoJuraj%20Martinka from GoodData
+  + #1258: Fixed broken Breakdown view operations: treerank & deletion
+
+Changes from 3.0 alpha 12 to 3.0 alpha 13
+2012-08-10
++ Bug fixes:
+  + #1240: Effort spent calculation in iteration Burndown graph.
+  + #Change: Reverted Effort Spent focus directly to Close-button.
+
+Changes from 3.0 alpha 11 to 3.0 alpha 12
+2012-08-09
++ Bug fixes:
+  + #1117: Bug: Missing: a direct way to remove stories away from a standalone iteration. Fixed: Can be removed by moving back to its backlog.
+  + #1239: Fix StoryInfoBubble backlog & iteration selection
+
+Changes from 3.0 alpha 10 to 3.0 alpha 11
+2012-08-07
++ Bug fixes:
+  + #962:  Fix the upgrade scripts so that they give everyone access to all products and remove old upgrade shell scripts from the release package
+
+Changes from 3.0 alpha 9 to 3.0 alpha 10
+2012-07-20
++ Bug fixes:
+  + #848:  Change delete dialog tab order in all delete dialogs (First focus in cancel, then change to OK)
+  + #852:  HeaderTooltips and focus to Close-button
+  + #887:  Leaf stories as default tab when clicking on a project
+  + #1056: Iteration history tab throws exception - Hide until it's fixed!
+  + #1078: Iteration assignees selector dialog (product level, projects tab) & (project level, iterations tab)'s title says "(Insert title here)" instead of "Select users"
+  + #1144: Bug in iteration velocity calculation
+  + #1200: Adding effort to story's task in product gives error (in daily work view)
+  + #1207: Bug: in standalone iteration: creating a story, when top-ranked story has parent story in project, doesn't work
+
+Changes from 3.0 alpha 8 to 3.0 alpha 9
+2012-07-02
++ Bug fixes:
+  + #866  Text change tweaks to project burn-up legend
+  + #888  Text change: product/project Leaf stories tab => Backlog, Story tree tab => Breakdown, Story tree header => Product Backlog in product view and Project Backlog in project view
+  + #913  BUG: When a story is in a Product and in a Standalone iteration, it shows up in Product Leaf stories in the product as well (should only be in the standalone iteration)
+  + #1180 Prevent non-admins from seeing Teams and Users they don't belong to via assignee selector (in task, story, iteration, project)
+  + #1191 Daily work - My stories shows Done stories from standalone iterations (should not show them)
+
+Changes from 3.0 alpha 7 to 3.0 alpha 8
+2012-06-26
++ Bug fixes related to user & access rights:
+  + #1165 Prevented non-admin users from seeing Teams they do not belong to, as well as Users not in their teams
+  + #1161 Restricted non-admin users from viewing anyone else's daily work
+  + #1155 Restricted non-admin users from viewing the portfolio
+  + #1181 Bug: in certain cases security check throws nullpointerException when non-admin opens storyInfoBubble
+
+
+Changes from 3.0 alpha 6 to 3.0 alpha 7
+2012-06-14
++ Bug fixes:
+  + Deleting a project that has one or more iterations containing one or more stories threw exception (#963)
+  
+
+Changes from 3.0 alpha 5 to 3.0 alpha 6
+2012-06-12
++ Bug fixes:
+  + Copied story appears in project, not iteration; fixed (#961)
+  + ID displays null when creating a new story in iteration; fixed (#1017)
+  + Selecting [standalone iterations] in Timesheets throws exception; fixed (#943)
+  + Clicking on iteration history tab throws exception; fixed (#1056)
+  + Top left logo to point to www.agilefant.org (#439)
+
+
+Changes from 3.0 alpha 4 to 3.0 alpha 5
+2012-06-08
++ Bug fixes:
+  + Iteration spent effort graph omitted efforts from stories and tasks in stories; fixed (#1108)	 
+  + Exception from clicking on 'Backlogs' tab after login if there are no products or standalone iterations that the user has access to; fixed (#958)
+  + Force Java 1.6 compilation
+  + Enlarge -link below iteration burndown charts was broken; fixed
+  + Refactored design issues and fixed potential memory leaks regarding anonymous DB export
+  
+  
+Changes from 3.0 alpha 3 to 3.0 alpha 4
+2012-05-31
++ Bug fixes:
+  + Fixed story tree after it was broken by #977 in alpha 1.2 (#1122)
+
+
+Changes from 3.0 alpha 2 to 3.0 alpha 3
+2012-05-31
++ Bug fixes:
+  + Bug: stories saved in regular iterations drops story rank to the bottom of the iteration; fixed (#1034) 
+
+  
+Changes from 3.0 alpha 1 to 3.0 alpha 2
+2012-05-28
++ Bug fixes:
+  + Creating stories to a standalone iteration threw exception fixed
+  + The dialog for sharing iterations as read-only gave the wrong URL;
+  + 'Backlog' column in project leaf story list did not display iteration; fixed 
+  
+
+Changes from 2.5 to 3.0 alpha 1
+2012-04-27
++ Iterations can now include stories from multiple products
+  + Iterations can now be "standalone"; this is the simplest way to use Agilefant for iteration management
+  + The project level is no longer mandatory; a product can be advanced via assigning its stories to standalone iterations
++ Per-product user rights 
+  + Separated admin users from 'regular' users (admin-status can be set in new user creation)
+  + Only admins are allowed to create products, edit teams, create users, edit other users' accounts, export the database, etc.
+  + Admin users can set which teams can access which products 
+  + In team creation the team can be set to access all products
+  + Likewise, in product creation, all teams can be granted access to it
++ Read-only iterations
+  + Iterations can now be shared as read-only via emailing an URL token (all metrics and stories visible; tasks are hidden)
++ Small usability improvements
+  + Story IDs in iteration and project leaf story lists are now clickable links for copy-paste purposes
++ Misc bug fixes
+  + Fixed initialization of vertical rank in story tree of a newly created story
+  + Overly long decimals truncated in Project metrics widget (used to create custom views into the portfolio)
++ Known issues
+  + listed at 3.0 alphas' release thread at http://agilefant.freeforums.org/post643.html
+  + new alpha releases are made whenever significant changes get done; 
+    these are announced in the above thread, along with an updated list of known issues
+  + if you find a new issue, post it to the above thread
+
+  
+Changes from 2.0.5 to 2.5
+2012-04-08
++ Improved portfolio management
+  + Improved metrics in Story, Iteration and Project widgets used to create custom views into the 
+    development portfolio
++ Improved support for product and release planning
+  + Project burn-up now displays an additional graph based on the maximum of story points in the 
+    tree (e.g. story of 10 points having two children with 2 points each => 10 points, instead of 4)
+  + New story attribute 'Value' (a non-negative integer, similar to story points)
+  + Drag & drop multiple stories in the story tree view with a single operation
+  + Added 'rank to top' and 'rank to bottom' as separate buttons in the 
+    project leaf stories view for faster ranking; fixed bug regarding these actions
+  + Improved layout when creating stories in the project leaf stories list
+  + New stories are now created to the top of the project leaf stories list
+  + Story IDs are displayed in the project leaf story list for easier reference
++ Improved iteration management
+  + New state 'Deferred' for stories and tasks to indicate that it has been scoped out of the
+    project or iteration. Deferred stories (tasks) are ignored in all metrics
+  + Stories (including tasks) can now be copied in iteration view - helps e.g. in
+    dealing with unfinished stories at the end of an iteration
+  + Iteration burndown now depicts cumulative spent effort as a function of time (when timesheets are enabled)
+  + Setting tasks as 'Ready' prompts for zeroing of effort left
+  + Iteration history tab now includes trace of added/removed stories
+  + Story IDs are displayed in the iteration story list for easier reference
++ User rights
+  + Teams can now be deleted (preparatory work for the upcoming teams/products access matrix)
++ Support for Agilefant's research-industry ecosystem
+  + Manual export of database for research and/or backup purposes (outputs a zipped SQL dump that you 
+    can email - Agilefant does not send anything anywhere!)
+  + Automatic anonymization of an exported database for research purposes (all object names 
+    are replaced with their ID's, all text fields in objects are replaced with string length) 
++ Small usability improvements
+  + All editing is now done with single-click (instead of double-click); double-click still works, though
+  + Smoother drag n' drop for ranking stories in story lists
+  + Search now includes tasks as well
+  + Focus to main frame when loading all pages (pages can be scrolled without unnecessary 
+    focus clicking when not using a mouse)
+  + Planned size of projects and iterations now explicitly as man-hours
++ Misc bug fixes
+
+Changes from 2.0.4, also known as Agilefant 2.0.3 (r4337)
+2011-11-26
++ Usability improvements:
+  + Navigation between Story tree and Iteration views now possible from the context info bubbles
+  + Added a 'Recent items' tag cloud to ease finding the stories recently worked on
+  + Improved help page texts
++ Bugfixes (agilefant.googlecode.com ids):
+  + 22: NullpointerException in Daily work
+  + 20: Trying to add spent effort when creating a task gives an error (if the task is not yet saved)
+  + 34: Team names are not unique
+
+
+Changes from 2.0.3
+2010-09-08
++ Labels can be added when creating a new story
++ Possibility to show weekends as flat-lines in iteration burndown
++ Iteration summary, stories and tasks can be exported in Excel spreadsheet 
++ Fixes to RESTful API and data format
++ Bugfixes: 0000145, 0000131, 0000159 and 0000159
+
+
+Changes from 2.0.2
+2010-08-25
+! NOTE ! Agilefant 2.0.3 requires Java 6
++ New RESTful web API, see further details at http://www.agilefant.org/wiki/display/AEF/RESTful+API
++ Numerous bugfixes 
+  - mantis issues: 0000154, 0000155, 0000140, 0000151, 0000152, 0000146, 0000150, 0000147 and 0000148
+  - see http://www.agilefant.org/mantis/
+
+
+Changes from 2.0.1
+2010-07-26
++ Renewed portfolios with customizable widgets
++ Product leaf stories view for easy drag'n'drop moving of stories
++ Editing multiple stories at a time in story tree is now possible
+
+
+Changes from 2.0
+2010-06-28
++ Quick search functionality
++ Labels in story lists
++ Configuring the story tree
++ Branch metrics in story trees
+
+
+Changes from Beta 2
+2010-06-03
++ Timesheets related bug fixes
++ Reduced debug levels
++ Performance improvements
+
+Changes from Beta 1
+2010-05-28
++ Daily work functionality rewritten
++ Lots of improvements to story tree
+ - The hierarchy consistency is mainted. For example a child story can not reside
+   in a different project than its parent
++ All functionality that will be included in Agilefant 2.0 should be present 
++ Added help page and some quick help links
++ Daily Work, Timesheets, and Portfolio view can now be enabled/disabled in the settings
+
+
+Changes from Alpha 5
+2010-04-09
++ Story tree improvements
+  - Editing story labels
+  - Creating stories to empty story trees
+  - Improved filtering and search capabilities
++ Performance improvements in project and iteration views
++ Ability to delete iterations, projects and products
+
+ 
+Changes from Alpha 4
+2010-02-12
++ Labels can be added to stories
++ Iteration workload
++ Story tree improvements, such as creating child and sibling stories
++ Improvements to setting pages
++ New user interface for logging spent effort
+
+
+Changes from Alpha 3
+2010-01-09
+--
+ + Project portfolio view added
+ + Story tree on product and project pages
+   - including changing parent-child relationships
+   - sorting story trees
+ + Sorting project child stories
+ + 'My Assignments' in left hand menu
+ + Minor timesheets improvements
+
+
+Changes from Alpha 2
+2009-11-17 
+--
+ + Timesheets functionality implemented
+   - including logging effort for stories, tasks, iterations, projects and products
+ + Story tree and hierarchy on project page
+ + Splitting stories
+ + New layout
+ + Lots of changes to Daily Work
+
+=================================================================
+
+Compared to the previous major version, Agilefant 1.6, the 2.0 version has the
+following changes.
+
+For more information and questions, visit http://www.agilefant.org/.
+
+- Totally renewed user interface
+ * The interface has been streamlined and works similarly in every view
+ * Performance and ease-of-use is now on a totally different level
+
+- Conceptual model has been fundamentally changed
+ * Instead of a workaround on iteration level, the stories are now consistent
+   throughout the whole system
+ * The former tags have been changed to a more intuitive and easy-to-use labeling
+   system
+ * A work queue for tasks has been added to the Daily Work page
+  
+- Hierarchical backlog management
+ * Product level backlog has been replaced with a story tree
+ * Project backlog is now a collection of all of its iterations' stories
+ * Hierarchy is allowed on project and product levels. Iteration stories can't
+   have children
+
+- Disabling unneeded views
+ * The Timesheets, Daily Work, and Portfolio views can be disabled through the
+   Settings page. 
+
+- Browser support:
+ * Firefox 3.0+ and Google Chrome are officially supported
+ * Safari should work fine
+ * IE8 is not guaranteed to work, but works to some standard
+ * Opera probably works to some extent, but has not been tested
+ 

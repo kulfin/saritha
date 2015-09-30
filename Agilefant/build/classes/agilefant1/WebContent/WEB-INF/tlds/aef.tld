@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>aef</short-name>
+	<display-name>AEF</display-name>
+	<description>Agilefant tag library</description>
+
+	<tag>
+		<name>text</name>
+		<tag-class>org.apache.struts2.views.jsp.TextTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<description>Wrapper for struts2 text tag</description>
+	</tag>
+	
+	<tag>
+		<name>existingObjects</name>
+		<tag-class>fi.hut.soberit.agilefant.web.tag.ExistingObjectsTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>
+			Variables hasProducts, hasProjects, hasIterations
+			implies weather objects exist
+	   </description>
+	</tag>
+	
+	
+  <tag>
+    <name>currentBacklog</name>
+    <description>Get the current backlog and save it to JSP variable and saves the hierarchy of ids to variables</description>
+    <body-content>JSP</body-content>
+    <tag-class>fi.hut.soberit.agilefant.web.tag.CurrentBacklogTag</tag-class>
+    <attribute>
+      <name>backlogId</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+	<tag>
+		<name>css</name>
+		<tag-class>fi.hut.soberit.agilefant.web.tag.CssTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>path</name>
+			<required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>minify</name>
+			<required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>javascript</name>
+		<tag-class>fi.hut.soberit.agilefant.web.tag.JavascriptTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>path</name>
+			<required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>minify</name>
+			<required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+ 	 <tag-file>
+	    <name>datepicker</name>
+	    <path>/WEB-INF/tags/datepicker.tag</path>
+ 	 </tag-file>
+	<tag-file>
+		<name>timesheetBacklogNode</name>
+		<path>/WEB-INF/tags/timesheetBacklogNode.tag</path>
+	</tag-file>
+	 <tag-file>
+    <name>timesheetStoryNode</name>
+    <path>/WEB-INF/tags/timesheetStoryNode.tag</path>
+  </tag-file>
+    <tag-file>
+    <name>timesheetTaskNode</name>
+    <path>/WEB-INF/tags/timesheetTaskNode.tag</path>
+  </tag-file>
+  <tag-file>
+    <name>timesheetHourEntryList</name>
+    <path>/WEB-INF/tags/timesheetHourEntryList.tag</path>
+  </tag-file>
+  <tag-file>
+    <name>storyTreeNode</name>
+    <path>/WEB-INF/tags/storyTreeNode.tag</path>
+  </tag-file>
+  <tag-file>
+    <name>storyTreeField</name>
+    <path>/WEB-INF/tags/storyTreeField.tag</path>
+  </tag-file>
+  <tag-file>
+    <name>settingStoryTreeField</name>
+    <path>/WEB-INF/tags/settingStoryTreeField.tag</path>
+  </tag-file>
+  <tag-file>
+    <name>backlogBreadCrumb</name>
+    <path>/WEB-INF/tags/backlogBreadCrumb.tag</path>
+  </tag-file>
+  
+  
+	<function>
+	  <name>isProduct</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>boolean isProduct( java.lang.Object )</function-signature>
+	</function>  	 
+	<function>
+	  <name>isProject</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>boolean isProject( java.lang.Object )</function-signature>
+	</function>  	 
+	<function>
+	  <name>isIteration</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>boolean isIteration(java.lang.Object)</function-signature>
+	</function>
+	<function>
+	  <name>isStandaloneIteration</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>boolean isStandaloneIteration(java.lang.Object)</function-signature>
+	</function>
+	<function>
+	  <name>isStory</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>boolean isStory(java.lang.Object)</function-signature>
+	</function>  	 
+	<function>
+	  <name>isUser</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>boolean isUser(java.lang.Object)</function-signature>
+	</function>  	   	 
+	 	 
+	<function>
+	  <name>subString</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>String out(java.lang.String, int)</function-signature>
+	</function>  	 
+	
+	<function>
+	  <name>dateTimeToFormattedString</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>String dateTimeToFormattedString(org.joda.time.DateTime)</function-signature>
+	</function>  
+	
+	<function>
+		<name>mergeAndSort</name>
+		<function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  	<function-signature>java.util.List mergeAndSort(java.util.List, java.util.List)</function-signature>
+	</function>
+	
+	<function>
+	  <name>dateTimeToDate</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>public static Date dateTimeToDate(org.joda.time.DateTime)</function-signature>
+	</function> 
+	
+	<function>
+	  <name>currentDateTime</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>public static DateTime currentDateTime()</function-signature>
+	</function>
+	
+	<function>
+	  <name>minutesToString</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>String minutesToString(java.lang.Long)</function-signature>
+	</function> 
+  
+	<function>
+	  <name>estimateToHours</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>String estimateToHours(fi.hut.soberit.agilefant.model.ExactEstimate)</function-signature>
+	</function>
+  	 	 
+	<function>
+	  <name>isBeforeThisDay</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>boolean isBeforeThisDay(org.joda.time.DateTime)</function-signature>
+	</function>
+	
+	<function>
+	  <name>listContains</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>boolean listContains(java.util.Collection, java.lang.Object)</function-signature>
+	</function>
+	
+	
+	
+	<function>
+	  <name>listSubstract</name>
+	  <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+	  <function-signature>java.util.Listsubstract substract(java.util.Collection, java.util.Collection)</function-signature>
+	</function> 	 
+	
+	<function>
+    <name>joinNamedObjects</name>
+    <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+    <function-signature>java.lang.String joinNamedObjects(java.util.Collection)</function-signature>
+  </function>
+	
+	<function>
+    <name>scheduleStatus</name>
+    <function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+    <function-signature>String scheduleStatus(fi.hut.soberit.agilefant.model.Schedulable)</function-signature>
+	</function>
+
+	<function>
+		<name>version</name>
+		<function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+		<function-signature>String version()</function-signature>
+	</function>
+
+	<function>
+		<name>buildTimestamp</name>
+		<function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+		<function-signature>String buildTimestamp()</function-signature>
+	</function>
+
+	<function>
+		<name>releaseMode</name>
+		<function-class>fi.hut.soberit.agilefant.web.function.AEFFunctions</function-class>
+		<function-signature>boolean releaseMode()</function-signature>
+	</function>
+</taglib>
