@@ -1,0 +1,187 @@
+A {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT: Normal 9pt Verdana,Arial,Helvetica,sans-serif; BORDER-LEFT: 0px; CURSOR: pointer; COLOR: blue; BORDER-BOTTOM: 0px; TEXT-DECORATION: none
+}
+DIV.notebook {
+	BORDER-RIGHT: midnightblue thin inset; DISPLAY: none; BORDER-LEFT: midnightblue thin inset; WIDTH: 90%; BORDER-BOTTOM: midnightblue thin inset; HEIGHT: auto; BACKGROUND-COLOR: #ffffff
+}
+TABLE.notebook {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; WIDTH: 90%; BORDER-BOTTOM: 0px
+}
+BODY {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+	BACKGROUND-COLOR: #FFEFEF
+}
+BODY.Menu {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+	BACKGROUND-COLOR: #FFEFEF; 
+	}
+BODY.SC{
+	FONT-WEIGHT: BOLD; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+	BACKGROUND-COLOR: #FFEFEF; COLOR: #000000
+}
+DIV.scrollbar {
+	OVERFLOW: auto; WIDTH: 100%; HEIGHT: 100%
+}
+INPUT {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+TEXTAREA {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt
+}
+
+H2 {
+	FONT: bold 12pt Verdana,Arial,Helvetica,sans-serif; CURSOR: default
+}
+H2.Heading {
+	FONT: bold 12pt Verdana,Arial,Helvetica,sans-serif; CURSOR: default; COLOR: #CC3333;
+}
+H3 {
+	FONT: bold 9pt Verdana,Arial,Helvetica,sans-serif; CURSOR: default;	BACKGROUND-COLOR: #FFAEAE;
+}
+H3.Top {
+	FONT: bold italic 9pt Verdana,Arial,Helvetica,sans-serif; CURSOR: default;
+	BACKGROUND-COLOR: #FFAEAE;
+}
+
+
+TD.results {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #FFCECE
+}
+TH.results {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana
+}
+TH.results {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #FFCECE
+}
+TH.End {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana
+}
+TH.End {
+	FONT-WEIGHT: bold;
+}
+
+BODY.report {
+	FONT: 9pt Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: white
+}
+TABLE.report {
+	FONT: 9pt Verdana,Arial,Helvetica,sans-serif
+}
+H1.report {
+	FONT: bold 12pt Verdana,Arial,Helvetica,sans-serif
+}
+H2.report {
+	FONT: bold 11pt Verdana,Arial,Helvetica,sans-serif
+}
+H3.report {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif;
+}
+H4.report {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif
+}
+H5.Version {
+	FONT: bold 9pt Arial,Helvetica,sans-serif; COLOR:#000000
+}
+
+.row_odd {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+.row_even {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+
+TR.row_odd {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FFEFEF
+}
+TR.row_even {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FFCECE
+}
+TH.row_even {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FFCECE; width: 60%; FONT-WEIGHT: BOLD
+}
+TD.row_even {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FFCECE; width: 70%; FONT-WEIGHT: BOLD
+}
+
+TR.row_title {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #808000
+	BACKGROUND-COLOR: #808000 
+	BORDER-RIGHT: #808000 2px outset; 
+	BORDER-TOP: #808000 2px outset; 
+	BORDER-LEFT: #808000 2px outset; 
+	BORDER-BOTTOM: #808000 2px outset; 
+
+}
+TH.row_title {
+	FONT-SIZE: 8pt; 
+	BACKGROUND-COLOR: #808000 
+	BORDER-RIGHT: #808000 2px outset; 
+	BORDER-TOP: #808000 2px outset; 
+	BORDER-LEFT: #808000 2px outset; 
+	BORDER-BOTTOM: #808000 2px outset; 
+
+}
+.row_title {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #808000 ; COLOR: #FFFFCC
+}
+A.Footer {
+	FONT-SIZE: 8pt; COLOR: yellow; TEXT-DECORATION: none
+}
+A.detail {
+	FONT-SIZE: 8pt; COLOR: blue; TEXT-DECORATION: none
+}
+.navigate {
+	FONT-SIZE: 10pt; COLOR: gray; TEXT-DECORATION: none
+}
+A.title {
+	FONT-SIZE: 10pt; COLOR: #FFCC33; TEXT-DECORATION: none
+}
+
+
+BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+
+FORM {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+TD {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica
+}
+
+A {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+
+TH.labeltext {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #333333; BACKGROUND-COLOR: #eeeeee
+}
+
+.SC {
+     scrollbar-arrow-color:#00000;
+     scrollbar-base-color:#FFEFEF;
+     scrollbar-face-color:#FFCECE;
+     scrollbar-darkshadow-color:#FFCECE;
+	}
+.SCALL {scrollbar-3dlight-color:#FFCECE;
+     scrollbar-arrow-color:;
+     scrollbar-base-color:#FFEFEF;
+     scrollbar-darkshadow-color:#FFCECE;
+     scrollbar-face-color:#FFCECE;
+     scrollbar-highlight-color:#FFCECE;
+     scrollbar-shadow-color:#FFCECE
+	}

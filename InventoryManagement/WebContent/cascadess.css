@@ -1,0 +1,21 @@
+body{
+   font-family: Monotype Corsiva;
+   font-size: 20px;
+   color:black;
+}
+a:visited{font-family:arial;
+color:black;
+background:lightblue;
+font-size:12px;}
+a:hover{background:dodgerblue;
+color:black;
+font-family:verdana;
+}
+a:active{font-family:arial;
+color:black;
+background:lightblue;
+font-size:12px;}
+a:link{font-family:arial;
+color:black;
+background:lightblue;
+font-size:12px;}

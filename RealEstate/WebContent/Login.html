@@ -1,0 +1,25 @@
+<!--
+		File : Home.html
+		Purpose : Dividing the window in to 3 frames and loading particular pages in
+				  those  frames Header.html, menu.htm and Report.jsp
+-->
+
+<html>
+<HEAD>
+	<LINK href="styles.css" type="text/css" rel="stylesheet">
+
+</HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+history.go(+1);
+
+//-->
+</SCRIPT>
+
+<Frameset Rows="100,*" NORESIZE>
+
+	<Frame src="Header.html" FrameBorder=0 Marginheight=0 Marginwidth=0 Name="FrameTop"  NORESIZE scrolling=no>
+	<frame name = FrameBTM src="Login.jsp" FrameBorder=0 >
+</Frameset>
+
+</html>

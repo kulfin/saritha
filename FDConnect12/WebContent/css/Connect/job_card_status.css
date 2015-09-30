@@ -1,0 +1,254 @@
+body { //
+	background-color: #FFFFFF;
+	padding: 0;
+	margin: 0; //
+	background-color: #DBDBCF;
+}
+
+#container {
+	width: 1300px;
+	height: 100%;
+	margin: auto;
+}
+
+#header {
+	
+}
+
+#main_content {
+	
+}
+
+#filt_div { //
+	position: relative;
+	margin-top: 15px;
+	font: 16px calibri;
+	width: 1360px;
+	height: 34px;
+	border: #778 2px solid;
+	background: #e0e0e0;
+	color: #000000; //
+	color: rgb(70, 66, 66);
+}
+
+#tab_div { //
+	position: relative;
+	font: 16px calibri;
+	width: 1360px;
+	height: 30px;
+	border: #778 2px solid;
+	background: #e0e0e0;
+	margin-top: 5px;
+	color: #000000;
+}
+
+#element_mode_filter {
+	width: 1360px;
+	height: 34px;
+	margin: 10px 0 0 0;
+	border: #778 2px solid;
+	background: #CFD6D5;
+	display: none;
+}
+
+#jc_select_label {
+	margin-left: 20px;
+	height: 20px;
+	width: 900px;
+	background: #CFD6D5;
+	border: #778 solid 1px;
+	position: absolute;
+	text-align: center;
+	font-family: calibri; //
+	font-weight: bold;
+	color: #000000;
+}
+
+#jc_select_div {
+	height: 500px;
+	width: 900px;
+	border: #778 1px solid;
+	overflow: auto;
+	position: absolute;
+	margin: 30px 0 0 20px;
+}
+
+#job_card_selection_grid_table {
+	width: 825px;
+	border: #778 1px solid;
+}
+
+#job_card_selection_grid_table th {
+	border: #778 1px solid;
+	background: url(images/bluetab.gif) top left repeat-x;
+	color: rgb(70, 66, 66);
+}
+
+#job_card_selection_grid_table td {
+	border: #778 1px solid;
+}
+
+.component_detail_table {
+	width: 820px;
+}
+
+.component_detail_table th {
+	background: #FFFFFF;
+}
+
+.component_detail_table,th,td {
+	border: solid 1px lightgray;
+}
+
+.component_detail_table th {
+	color: red;
+}
+
+.jc_summary {
+	width: 820px;
+	height: 23px;
+	position: relative;
+	margin: 9px 0 0 10px;
+	color: #FFFFFF;
+	font-family: calibri; //
+	border: 1px solid red;
+}
+
+.jc_summary_fields {
+	width: 775px;
+	height: 20px;
+	background-color: #CFD6D5;
+	margin: 0px 0 0 10px;
+	border: 1px solid #778;
+	position: absolute;
+	font-size: 15px;
+}
+
+.jc_detail { //
+	background-color: #7D4DE4;
+	position: relative;
+	margin: 0px 0 0 44px; //
+	color: #FFFFFF;
+	font-family: calibri; //
+	border: 1px solid red;
+	display: none;
+}
+
+.jc_detail_table,th,td {
+	border: solid 1px lightgray;
+}
+
+.jc_detail_table th {
+	color: red;
+}
+
+.jc_detail_table td { //
+	color: #7D4DE4;
+}
+
+.jc_detail_table {
+	width: 775px;
+}
+
+#element_select_label {
+	height: 20px;
+	width: 1360px;
+	background: #CFD6D5;
+	border: #778 solid 1px;
+	position: absolute;
+	text-align: center;
+	font-family: calibri; //
+	font-weight: bold;
+	color: #000000;
+	margin: 5px 0 0 0;
+}
+
+#element_select_div {
+	height: 400px;
+	width: 1360px;
+	border: #778 1px solid;
+	overflow: auto;
+	position: absolute;
+	margin: 35px 0 0 0;
+}
+
+.element_detail_table {
+	width: 1300px;
+	font-size: 13px;
+}
+
+.element_detail_table th {
+	background: #FFFFFF;
+}
+
+.element_detail_table,th,td {
+	border: solid 1px #CACBCB;
+}
+
+.element_detail_table th {
+	color: #6E7070;
+}
+
+.element_detail_table td {
+	color: #484949;
+}
+
+.element_summary {
+	width: 1300px;
+	height: 33px;
+	position: relative;
+	margin: 9px 0 0 10px;
+	color: #FFFFFF;
+	font-family: calibri; //
+	border: 1px solid red;
+}
+
+.element_summary_fields {
+	width: 1300px;
+	height: 26px;
+	background-color: #CFD6D5;
+	margin: 0px 0 0 10px;
+	border: 1px solid #778;
+	position: absolute;
+	font-size: 15px;
+}
+
+.element_detail { //
+	background-color: #7D4DE4;
+	position: relative;
+	margin: 0px 0 0 44px; //
+	color: #FFFFFF;
+	font-family: calibri; //
+	border: 1px solid red; //
+	display: none;
+}
+
+#jc_update_label {
+	height: 20px;
+	width: 26%;
+	background-color: #CFD6D5;
+	border: #778 solid 1px;
+	position: absolute;
+	text-align: center;
+	font-family: calibri; //
+	font-weight: bold;
+	color: #000000;
+	margin: 0px 0 0 960px; //
+	display: none;
+}
+
+#jc_update_div {
+	height: 400px;
+	width: 26%;
+	border: #778 solid 1px;
+	position: absolute;
+	margin: 30px 0 0 960px;
+	font-family: calibri;
+	font-weight: bold;
+	color: #778; //
+	display: none;
+}
+
+#footer {
+	
+}

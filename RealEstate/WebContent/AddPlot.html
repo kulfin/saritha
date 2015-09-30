@@ -1,0 +1,145 @@
+
+
+<html>
+<HEAD>
+	<LINK href="styles.css" type="text/css" rel="stylesheet">
+
+</HEAD>
+<script language="JavaScript" src="gen_validatorv31.js" type="text/javascript">
+<!--
+function Validate()
+{
+	var PlotNum=0,OtherExp=0,RoadNum=0,SurNum=0,Extent=0,CostSqYard=0;
+	var Boundaries="",Facing="",Status="";
+	var Obj = document.PlotForm;
+	PlotNum = Obj.PlotNum.value;
+	OtherExp = Obj.OtherExp.value;
+	RoadNum = Obj.RoadNum.value;
+	SurNum = Obj.SurNum.value;
+	Extent = Obj.Extent.value;
+	CostSqYard = Obj.CostSqYard.value;
+	Boundaries = Obj.Boundaries.value;
+	Facing = Obj.Facing.options[Obj.Facing.options.selectedIndex].text;
+	alert(Facing);
+	Status = Obj.Status.options[Obj.Status.options.selectedIndex].text;
+	//alert(Status);
+	if(PlotNum=="" || PlotNum==null) 
+	{
+		alert("Plot number is mandatory");
+		Obj.PlotNum.focus();
+		return false;
+	}
+	if(OtherExp=="" || OtherExp==null) 
+	{
+		Obj.OtherExp.value=0;
+	}
+	if(RoadNum=="" || RoadNum==null) 
+	{
+		alert("Road number is mandatory");
+		Obj.RoadNum.focus();
+		return false;
+	}
+	if(SurNum=="" || SurNum==null) 
+	{
+		Obj.SurNum.value = 0;
+	}
+	if(Extent=="" || Extent==null) 
+	{
+		alert("Extent is mandatory");
+		Obj.Extent.focus();
+		return false;
+	}
+	if(CostSqYard=="" || CostSqYard==null) 
+	{
+		alert("Cost per Square Yard is mandatory");
+		Obj.CostSqYard.focus();
+		return false;
+	}
+	if(Boundaries=="" || Boundaries==null) 
+	{
+		Obj.Boundaries.value = "Not Available";
+	}
+
+	if(Facing=="----") 
+	{
+		Obj.Facing.value = "Not Available";
+	}
+
+	if(Status=="----") 
+	{
+		Obj.Status.value = "Vacant";
+	}
+return true;
+}
+//-->
+</SCRIPT>
+<BODY CLASS=SC>
+
+<!-- To display Menu --Start -->
+<script language="JavaScript1.2" src="coolfunctions.js"></script>
+<script language="JavaScript1.2" src="coolmenus.js"></script>
+<!-- To display Menu --End --><br><br><br>
+<h3 align=Center>Add new Plot</h3>
+		<form method=post name="PlotForm" action="AddPlot.jsp" onsubmit = "return Validate();">
+		<table align=center>
+		<tr>
+			<td>Plot Number </td>
+			<td><input type="text" name="PlotNum"></td>
+		</tr>
+		<tr>
+			<td>Road Number </td>
+			<td><input type="text" name="RoadNum"></td>
+		</tr>
+		<tr>
+			<td>Survey Number </td>
+			<td><input type="text" name="SurNum"></td>
+		</tr>
+		<tr>
+			<td>Cost per Sq Yard </td>
+			<td><input type="text" name="CostSqYard"></td>
+		</tr>
+		<tr>
+			<td>Other Expences</td>
+			<td><input type="text" name="OtherExp"></td>
+		</tr>
+		<tr>
+			<td>Extent</td>
+			<td><input type="text" name="Extent"></td>
+		</tr>
+		<tr>
+			<td>Boundaries</td>
+			<td><input type="text" name="Boundaries"></td>
+		</tr>
+		<tr>
+			<td>Facing</td>
+			<td>
+				<select name="Facing">
+					<option value="NA">----</option>
+					<option value="East">East</option>
+					<option value="West">West</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Status</td>
+			<td>
+				<select name="Status">
+					<option value="NA">----</option>
+					<option value="Vacant">Vacant</option>
+					<option value="Reserved">Reserved</option>
+					<option value="Sold">Sold</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><input type="submit" Value="Save"></td>
+			<td><input type="reset" Value="Clear"></td>
+		</tr>
+		
+		</table>
+		
+		</form>
+</BODY>
+
+</html>

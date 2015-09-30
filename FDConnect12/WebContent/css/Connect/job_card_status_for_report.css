@@ -1,0 +1,77 @@
+body { //
+	background-color: #FFFFFF;
+	padding: 0;
+	margin: 0; //
+	background-color: #DBDBCF;
+}
+
+#container {
+	//width: 1380px;
+	height: 100%;
+	margin: auto;
+}
+
+#header {
+	
+}
+
+#main_content {
+	
+}
+
+#filt_div { //
+	position: relative;
+	margin-top: 15px;
+	font: 16px calibri;
+	//width: 1375px;
+	height: 34px;
+	border: #778 2px solid;
+	background: #CFD6D5;
+	color: #000000; //
+	color: rgb(70, 66, 66);
+}
+
+.jc_summary {
+	
+	position: relative;
+	margin: 9px 0 0 10px;
+	color: #FFFFFF;
+	font-family: calibri; //
+	border: 1px solid red;
+}
+
+.jc_summary_fields {
+	width: 775px;
+	height: 20px;
+	background-color: #CFD6D5;
+	margin: 0px 0 0 10px;
+	border: 1px solid #778;
+	position: absolute;
+	font-size: 15px;
+}
+
+.jobCardStatusTable {	 
+	border: 1px solid lightgray; 
+	margin-left:10px; 
+	border-radius: 10px; 
+	width : 3000px;	
+}
+
+.jobCardStatusTable th{
+	font: bold 13px 'Century Gothic','Geneva,sans-serif'; 
+	background-color: lightgray; 
+	//border-radius: 5px;
+	border: 1px solid black; 
+}
+
+.jobCardStatusTable td {
+	//border: solid 1px lightgray;
+	//border-radius: 5px;
+	font: 13px Calibri, sans-serif;
+	text-align: center;
+	border: 1px solid black; 
+}
+
+#footer {
+	
+}

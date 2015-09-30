@@ -1,0 +1,67 @@
+#navContainer {
+margin:0;
+padding:0;
+//background:#00008B;;
+//border: 1px solid #7398ba;
+text-align:center;
+width:220px;
+
+}
+
+#navContainer ul{
+margin:0;
+padding:0;
+list-style:none;
+}
+
+#navContainer ul li {
+position:relative;
+background: #A90B0B;
+
+}
+
+#navContainer ul li span{
+display:block;
+font-family:Arial Black;
+font-size:18px;
+
+}
+
+#navContainer ul li a{
+text-decoration:none;
+color:white;
+font-family:calibri,sans-serif;
+font-size:16px;
+display:block;
+padding:8px;
+//background:url(images/blueVertNav/buttonRight.png) top right no-repeat;
+//background: #A90B0B;
+}
+
+#navContainer ul li span:hover {
+//background:url(images/blueVertNav/hoverLeft.png) top left no-repeat;
+}
+
+#navContainer ul li a:hover{
+//background:url(images/blueVertNav/hoverRight.png) top right no-repeat;
+background:#CFD6D5;
+color: #2d2b2b;
+}
+
+#navContainer ul ul{
+position:absolute;
+display:none;
+}
+
+#navContainer ul ul li a{
+background:#CFD6D5;
+color: white;
+background: #A90B0B;
+}
+
+#navContainer ul li:hover ul{
+width:80%;
+position:absolute;
+display:block; left:218px;
+top:0;
+}

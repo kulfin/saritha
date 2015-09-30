@@ -1,0 +1,123 @@
+#main_content_div{
+width:1360px;
+height:550px;
+//border:double;
+margin: 0px auto;
+}
+#content_operation_div{
+position:relative;
+width:100%;
+height:100%;
+//border:double red;
+}
+#content_operation_button_div{
+position:absolute;
+margin:0 0 0 0;
+}
+#content_view_div{
+position:absolute;	
+height:80%;
+width:60%;
+border-right:#778 1px solid;
+margin:25px 0px 0px 0px;
+overflow:auto;
+}
+
+#content_view_table{
+width:95%;
+border:#778 1px solid;
+}
+#content_view_table th{
+border:#778 1px solid;
+height:25px;
+background:url('media/bluetab.gif') top left repeat-x;
+color: rgb(70, 66, 66);
+}
+#content_view_table td{
+border:#778 1px solid;
+height:25px;
+}
+
+
+
+
+
+#content_add_div{
+position:absolute;
+width:35%;
+height:260px;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:25px 0px 0px 850px;
+
+}
+#content_add_label_div{
+width:100%;
+text-align:center;
+margin:10px 0 0 0;
+color: #A90B0B;
+font:16px verdana bold;
+//font-weight: bold;
+//font-family: verdana;
+}
+
+#content_add_fields_div{
+margin:75px 0 0 10px;
+font:15px verdana;
+color: rgb(70, 66, 66);
+
+}
+
+#content_add_fields_table,th,td{
+border:0px;
+}
+
+#content_add_button_div{
+margin:15px 0 0 0px;
+text-align:center;
+}
+
+
+
+#content_update_div{
+position:absolute;
+width:35%;
+height:40%;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:25px 0px 0px 850px;
+display:none;
+
+}
+#content_update_label_div{
+width:100%;
+text-align:center;
+margin:10px 0 0 0;
+color: #A90B0B;
+font:16px verdana bold;
+//font-weight: bold;
+//font-family: verdana;
+}
+
+#content_update_fields_div{
+margin:75px 0 0 10px;
+font:15px verdana;
+color: rgb(70, 66, 66);
+
+}
+#content_update_fields_table,th,td{
+border:0px;
+}
+
+#content_update_button_div{
+margin:75px 0 0 0px;
+text-align:center;
+}
+
+
+
+
+
+
+
+

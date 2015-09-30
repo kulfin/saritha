@@ -1,0 +1,64 @@
+#main_content{
+width:1375;
+height:700px;
+border:double;
+}
+#content_operation_div{
+position:relative;
+}
+#content_operation_button_div{
+position:absolute;
+margin:10px 0 0 0;
+}
+#content_view_div{
+height:80%;
+width:60%;
+border-right:#778 1px solid;
+margin:35px 0px 0px 0px;
+}
+#content_view_table{
+width:90%;
+}
+#content_view_table,td,th{
+border:#778 1px solid;
+}
+#content_view_table th,td{
+height:25px;
+}
+
+#content_view_table th{
+background:url('media/bluetab.gif') top left repeat-x;
+color: rgb(70, 66, 66);
+}
+
+
+#content_add_div{
+position:absolute;
+width:30%;
+height:60%;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:35px 0px 0px 830px;
+
+}
+#content_add_fields_div{
+margin:35px 0 0 0;
+font:15px verdana;
+color: rgb(70, 66, 66);
+}
+
+#content_update_div{
+position:absolute;
+width:30%;
+height:60%;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:35px 0px 0px 830px;
+
+}
+
+
+
+
+
+

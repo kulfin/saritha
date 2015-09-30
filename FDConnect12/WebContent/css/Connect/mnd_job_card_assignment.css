@@ -1,0 +1,128 @@
+body {
+
+	
+	padding: 0;
+
+	margin: 0;
+
+}
+
+
+#container{
+width:1360px;
+//height:100%;
+margin:auto;
+//border:double;
+//overflow:auto;
+}
+
+
+
+
+#main_content{
+
+
+}
+
+#filt_div{
+//position: relative;
+margin-top: 15px;
+font: 16px calibri;
+width:1360px;
+height:34px;
+border:#778 2px solid;
+background:#e0e0e0;
+color:#000000;
+//color: rgb(70, 66, 66);
+
+}
+#grid_button_div{
+margin-top: 15px;
+font: 16px calibri;
+width:1360px;
+height:34px;
+border:#778 2px solid;
+background:#e0e0e0;
+color:#000000;
+}
+
+#grid_header_div{
+margin-top: 10px;
+font: 16px calibri;
+width:1360px;
+height:34px;
+border:#778 2px solid;
+background:#e0e0e0;
+color:#000000;
+}
+
+#grid_div{
+margin-top: 10px;
+font: 16px calibri;
+width:1360px;
+height:500px;
+border:#778 2px solid;
+overflow:auto;
+color:#000000;
+}
+#buttons_div{
+margin:20px 0 0 0;
+}
+
+.store_grid_div{
+margin: 6px 0 0 10px;
+font: 16px calibri;
+width:1340px;
+height:28px;
+border:#778 2px solid;
+color:#000000;
+background:#e0e0e0;
+}
+
+.element_grid_div{
+margin: 4px 0 0 10px;
+font: 16px calibri;
+width:1335px;
+min-height:45px;
+//border:#778 2px solid;
+color:#000000;
+display:none;
+
+}
+
+.element_grid_button_div{
+margin: 0px 0 0 0;
+font: 16px calibri;
+
+color:#000000;
+//border:double;
+
+}
+.element_grid_table_div{
+margin: -45px 0 0 110px;
+font: 16px calibri;
+width:1235px;
+color:#000000;
+
+}
+
+.element_grid_table{
+width:1235px;
+border:#778 1px solid;
+}
+.element_grid_table th{
+border:#778 1px solid;
+height:20px;
+background:url('images/bluetab.gif') top left repeat-x;
+color: rgb(70, 66, 66);
+font-weight:normal;
+}
+.element_grid_table td{
+border:#778 1px solid;
+height:20px;
+}
+
+#footer{
+
+
+}

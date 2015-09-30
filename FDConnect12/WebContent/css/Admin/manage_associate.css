@@ -1,0 +1,61 @@
+@CHARSET "ISO-8859-1";
+
+#associate_add {
+	position: absolute;
+	width: 470px;
+	border: #778 2px solid;
+	background: #CFD6D5;
+	margin: 35px 0px 0px 830px;
+}
+
+#associate_update {
+	position: absolute;
+	width: 470px;
+	border: #778 2px solid;
+	background: #CFD6D5;
+	margin: 35px 0px 0px 830px;
+	display: none;
+}
+
+#associate_detail {
+	position: absolute;
+	width: 770px;
+	overflow: auto;
+	border-right: #778 1px solid;
+	margin: 35px 0px 0px 0px;
+}
+
+#associate_detail table {
+	width: 760px;
+}
+
+#associate_detail table,#associate_detail td,#associate_detail th {
+	border: #778 1px solid;
+}
+
+#associate_detail th,#associate_detail td {
+	height: 25px;
+}
+
+#associate_detail th {
+	background: url('media/bluetab.gif') top left repeat-x;
+	color: rgb(70, 66, 66);
+}
+
+
+#capacityDetails table {
+	width: 760px;
+}
+
+#capacityDetails table,#capacityDetails td,#capacityDetails th {
+	border: #778 1px solid;
+}
+
+#capacityDetails th,#capacityDetails td {
+	height: 25px;
+}
+
+#capacityDetails th {
+	background: url('media/bluetab.gif') top left repeat-x;
+	color: rgb(70, 66, 66);
+}

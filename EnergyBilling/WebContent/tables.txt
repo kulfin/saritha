@@ -1,0 +1,77 @@
+*************************************************************
+			Tables (oracle)
+*************************************************************
+connect system/manager;
+create user power identified by power;
+grant all privileges to power;
+connect power/power;
+**************************************************************
+DSN -- power
+**************************************************************
+drop table logindetails;
+create table logindetails(uname varchar(50),password varchar(20),utype varchar(80));
+
+insert into logindetails values('admin','admin','admin');
+
+drop table circle;
+create table circle(
+idno number(3) Primary key,
+name varchar(40));
+
+
+drop table division;
+create table division(
+didno number(3) Primary key,
+cname varchar(40),
+dname varchar(40));
+
+
+drop table meter;
+create table meter(
+cname varchar(40),
+dname varchar(40),
+mno number primary key,
+mcname varchar(100));
+
+
+drop table consumer;
+create table consumer(
+cname varchar(40),
+dname varchar(40),
+mno number primary key,
+mcname varchar(100),
+name varchar(100),
+age number(2),
+sex varchar(10),
+cno number,
+address varchar(200),
+type varchar(15),
+uname varchar(30),
+pass varchar(30));
+
+drop table query;
+create table query(
+cname varchar(40),
+dname varchar(40),
+mno number primary key,
+mcname varchar(100),
+name varchar(100),
+query varchar(500));
+
+
+drop table billing;
+create table billing(
+bno number,
+cname varchar(40),
+dname varchar(40),
+mno number primary key,
+mcname varchar(100),
+name varchar(100),
+type varchar(30),
+used number,
+amount number,
+cno number,
+due varchar(10));
+
+..............................
+

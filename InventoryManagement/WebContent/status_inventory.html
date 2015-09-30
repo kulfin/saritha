@@ -1,0 +1,79 @@
+ <!--
+    File: ChangePassword.html
+	Purpose: Provides interface to change login password 
+
+ -->
+
+<HTML>
+<head><link rel="stylesheet" style="text/css" href="cascadess.css"/>
+<title>Status_inventory page</title>
+<script language="javascript">
+<!--
+function check()
+{
+var itemcode=document.statusform.itemcode.value;
+if(itemcode=="")
+{
+alert("Itemcode is mandantory");
+document.statusform.itemcode.focus();
+return false;
+}
+else{
+     var ed=itemcode;
+	 var pattern=/^([a-zA-Z0-9]{2,10})$/;
+	 if(!(pattern.test(ed)))
+	 {
+	 alert("enter a valid itemcode");
+	 document.statusform.itemcode.value="";
+	 document.statusform.itemcode.focus();
+	 return false;
+	 }
+	 }
+	 return true;
+}
+//-->
+</script>
+	</head>
+	<body background="images/bg6.jpg">
+<center>
+
+<BR><BR>
+<FONT FACE="Century Gothic">
+
+
+
+<FONT size="1" color="blue" FACE="TimesNewRoman">
+
+<FORM NAME="statusform" onSubmit="return check()" action="status_inventory.jsp" >
+
+<TABLE Border=0 align=center color="blue">
+<TR ALIGN="center">
+	   <TH COLSPAN="2" bgcolor="#808000">Find Status Of Inventory</TH>
+</TR>
+<tr>
+<td>&nbsp;
+</tr>
+
+
+
+<TR bgcolor="gray">
+	<TD>Enter ItemCode:</TD>
+	<TD><input TYPE="text" name="itemcode" size="8" maxlength="15"></TD>
+</TR>
+<TR>
+	<TD><INPUT TYPE=submit name=submit value="Status">
+</TD>
+	<TD><INPUT TYPE=reset name=resett value="Reset" > 
+</TD>
+</TR>
+</TABLE>
+
+
+</FORM>
+</font>
+</BODY>
+</HTML>
+
+
+
+

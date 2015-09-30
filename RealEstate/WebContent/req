@@ -1,0 +1,7 @@
+Appartments (appno,plotno,name,address,numflats)
+	new
+	view
+flats(appno,flatno,flattype,cost,status);
+	new
+	view
+

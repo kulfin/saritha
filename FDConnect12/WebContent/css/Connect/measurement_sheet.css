@@ -1,0 +1,72 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	font-size: 12px;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+}
+
+#header{
+height: 23px;
+background-color: #A90B0B;
+width:100%;
+}
+
+#admindiv {
+	widows: inherit;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-family: sans-serif, Arial, Helvetica,;
+		
+}
+
+#vertical_menu {
+	color: white;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: sans-serif;
+	background: #606060 url(arrowstop.gif) no-repeat 8px 6px;
+	word-spacing: 2px;
+	text-transform: uppercase;
+	margin: 7px 0 7px 0px;	
+}
+
+#maincontent {
+	font: bold 13px Calibri;
+	margin: 10px 0 0 0;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	letter-spacing: 1px;
+}
+
+#maincontent_element{
+	letter-spacing: 1px;
+	width: 100%;
+}
+
+#footer {
+	text-align: center;
+}
+
+a{
+color: #000000;
+text-decoration: none;
+}
+
+#measured_details{
+/* border: #778 2px solid;
+background: #e0e0e0;
+margin: 5px 30px 0px 0px;
+-webkit-border-radius: 3px;
+-moz-box-shadow: 3px 3px 5px 6px #ccc;
+-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+ */
+}

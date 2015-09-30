@@ -1,0 +1,71 @@
+body {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	font-size: 12px;
+	margin: 0;
+
+}
+
+
+
+#maincontent{
+width:1360px;
+//border:double;
+margin:auto;
+}
+
+
+
+
+
+ table{
+width:1350px;
+}
+ table,td,th{
+border:#778 1px solid;
+}
+ th,td{
+height:25px;
+}
+
+th{
+background:url(media/bluetab.gif) top left repeat-x;
+color: rgb(70, 66, 66);
+}
+
+
+
+#bom_detail_div{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+height:95px;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:0px 0px 0px 0px;
+position:relative;
+}
+
+#bom_element_detail_div{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+height:500px;
+
+margin:2px 0px 0px 0px;
+position:relative;
+overFlow:auto;
+}
+
+#bom_buttons_div{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+
+
+margin:10px 0px 0px 0px;
+position:relative;
+}
+
+

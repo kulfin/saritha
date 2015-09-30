@@ -1,0 +1,110 @@
+body {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	font-size: 12px;
+	margin: 0px;
+}
+
+#maincontent{
+	margin: 0px auto;
+	width: 1360px;
+}
+
+#material_detail{
+position:absolute;
+width:1300px;
+height:400px;
+overflow:auto;
+margin:35px 0px 0px 0px;
+}
+
+#delete_button{
+position:absolute;
+
+margin:10px 0px 0px 0px;
+}
+
+#add_button{
+position:absolute;
+
+margin:10px 0px 0px 150px;
+}
+
+#material_add{
+margin-left : 140px;
+position:absolute;
+width:890px;
+height:450px;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:35px 0px 0px 0px;
+color: #A90B0B;
+font-size:14px;
+font-family:verdana;
+display:none;
+}
+
+#material_add_table td{
+border:0px;	
+
+}
+#material_add_table tr{
+//border:1px;	
+
+}
+
+
+#material_update{
+position:absolute;
+width:885px;
+//height:580px;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:35px 0px 0px 135px;
+color: #A90B0B;
+font-size:14px;
+font-family:verdana;
+display:none;
+}
+
+#material_update_table td{
+border:0px;	
+
+}
+
+#material_detail table{
+width:1300px;
+}
+#material_detail table,td,th{
+border:#778 1px solid;
+}
+#material_detail th,td{
+height:25px;
+}
+
+#material_detail th{
+background:url(media/bluetab.gif) top left repeat-x;
+color: rgb(70, 66, 66);
+}
+
+#filt_div{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+height:35px;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:0px 0px 0px 0px;
+position:relative;
+}
+
+.material_content{
+//position:relative;
+font-size:14px;
+//font-weight:bold;
+font-family:calibri;
+//color:#778;
+}
+
+

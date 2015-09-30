@@ -1,0 +1,84 @@
+ <!--
+    File: ChangePassword.html
+	Purpose: Provides interface to change login password 
+
+ -->
+
+<HTML>
+<head><link rel="stylesheet" style="text/css" href="cascadess.css"/>
+<title>Search Item page</title>
+<script language="javascript">
+<!--
+function check()
+{
+var itemname=document.searchform.itemname.value;
+if(itemname=="")
+{
+alert("ItemName intialletter is mandantory");
+document.searchform.itemname.focus();
+return false;
+}
+else{
+     var ed=itemname;
+	 var pattern=/^([a-zA-Z]{1,10})$/;
+	 if(!(pattern.test(ed)))
+	 {
+	 alert("enter a valid strig");
+	 document.searchform.itemname.value="";
+	 document.searchform.itemname.focus();
+	 return false;
+	 }
+	 }
+	 return true;
+}
+//-->
+</script>
+	</head>
+	<body background="images/bg6.jpg">
+<center>
+
+<BR><BR>
+
+
+
+
+
+
+<FORM NAME="searchform" onSubmit="return check()" action="search_item.jsp" >
+
+<TABLE Border=0 align=center color="blue">
+<TR ALIGN="center">
+	   <TH COLSPAN="2" ><font size=5>Search For A Item</font></TH>
+</TR>
+<tr>
+<td>&nbsp;
+</tr>
+
+
+
+<TR bgcolor="gray">
+	<TD>Enter ItemName:</TD>
+	<TD><input TYPE="text" name="itemname" size="8" maxlength="15">(Enter initial letters)</TD>
+</TR>
+<TR>
+	<TD><INPUT TYPE=submit name=submit value="Search">
+</TD>
+	<TD><INPUT TYPE=reset name=resett value="Reset" > 
+</TD>
+</TR>
+</TABLE>
+<pre>
+
+
+
+<center><a href="sales-links.jsp">Back</a><center>
+</pre>
+
+</FORM>
+
+</BODY>
+</HTML>
+
+
+
+

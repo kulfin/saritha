@@ -1,0 +1,244 @@
+body {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	font-size: 12px;
+	margin: 0;
+
+}
+
+#maincontent{
+width:1360px;
+//border:double;
+margin:auto;
+}
+
+
+
+
+
+#bom_general_detail_div{
+//height:150px;
+width:1350px;
+//overflow:auto;
+margin:10px 0 0 0;
+}
+
+
+ table{
+width:1350px;
+}
+ table,td,th{
+border:#778 1px solid;
+}
+ th,td{
+height:25px;
+}
+
+th{
+background:url(media/bluetab.gif) top left repeat-x;
+color: rgb(70, 66, 66);
+}
+
+#filt_div{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+height:35px;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:0px 0px 0px 0px;
+position:relative;
+}
+
+#view_div{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+height:35px;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:7px 0px 0px 0px;
+position:relative;
+}
+
+#bom_detail_div_label{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+height:25px;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:15px 0px 0px 0px;
+font-size:14px;
+text-align:center;
+display:none;
+color:red;
+}
+
+#bom_detail_div{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+margin:8px 0px 0px 0px;
+
+//border:double;
+}
+
+#consolidation_div_label{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+height:25px;
+border:#778 2px solid;
+background:#CFD6D5;
+margin:15px 0px 0px 0px;
+font-size:14px;
+text-align:center;
+display:none;
+color:red;
+}
+
+#consolidation_div{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+margin:8px 0px 0px 0px;
+position:relative;
+//border:double;
+}
+
+#bom_element_detail_div{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+//height:500px;
+margin:2px 0px 0px 0px;
+
+//overFlow:auto;
+}
+
+#bom_buttons_div{
+font-family:verdana;
+font-weight:bold;
+width:1350px;
+margin:10px 0px 0px 0px;
+position:relative;
+}
+
+
+
+#material_consolidation_div{
+position:absolute;
+width:650px;
+height:400px;
+//overflow:auto;
+margin:4px 0 0 0;
+
+}
+
+
+#material_consolidation_div table{
+
+width:640px;
+
+margin:0px 0px 0px 0px;
+}
+
+#material_consolidation_div table,th,td{
+border:#778 1px solid;
+}
+
+#material_consolidation_div table th{
+background:url(media/bluetab.gif) top left repeat-x;
+color: rgb(70, 66, 66);
+}
+
+#material_consolidation_div table th,td{
+height:25px;
+}
+
+#material_costing_div{
+position:absolute;
+width:650px;
+height:400px;
+//overflow:auto;
+
+margin:4px 0px 0px 710px;
+}
+
+
+#material_costing_div table{
+
+width:640px;
+
+margin:0px 0px 0px 0px;
+}
+
+#material_costing_div table,th,td{
+border:#778 1px solid;
+}
+
+#material_costing_div table th{
+background:url(media/bluetab.gif) top left repeat-x;
+color: rgb(70, 66, 66);
+}
+
+#material_costing_div table th,td{
+height:25px;
+}
+
+
+#total_amount_display_div{
+width:640px;
+height:25px;
+border:#778 1px solid;
+background:#CFD6D5;
+font-family:calibri;
+font-weight:bold;
+font-size:16px;
+color:red;
+margin:7px 0 0 0px;
+}
+
+
+
+
+#gross_cost_display_div{
+width:640px;
+height:25px;
+border:#778 1px solid;
+background:#CFD6D5;
+font-family:calibri;
+font-weight:bold;
+font-size:16px;
+color:red;
+margin:7px 0 0 0px;
+
+}
+
+#discount_entry_div{
+width:640px;
+height:22px;
+border:#778 1px solid;
+background:#CFD6D5;
+font-family:calibri;
+font-weight:bold;
+font-size:16px;
+color:red;
+margin:7px 0 0 0px;
+
+}
+
+#net_cost_display_div{
+width:640px;
+height:25px;
+border:#778 1px solid;
+background:#CFD6D5;
+font-family:calibri;
+font-weight:bold;
+font-size:16px;
+color:red;
+margin:7px 0 0 0px;
+
+}

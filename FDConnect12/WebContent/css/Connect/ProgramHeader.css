@@ -1,0 +1,39 @@
+@CHARSET "ISO-8859-1";
+
+div.Project {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 3px;
+	background-color: white;
+	box-shadow: 0px 0px 2px 3px #cccccc;
+	color: lightgray;
+	font-family: Calibri;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	height: 30px;
+	width: 150px;
+	text-align: left
+}
+/* div.Project{
+	
+	background-color: lightgray; 
+	margin-left: 10px;
+	margin-right:10px;
+	margin-top: 75px;
+	height: 20px;
+	border-radius : 6px;
+	box-shadow : 0px 0px 5px 5px #cccccc;
+	text-align: centre;
+} */
+div.Projectdata{
+	
+	background-color: lightgray; 
+	margin-left: 19px;
+	margin-right:18px;
+	margin-top: 13px;
+	
+	border-radius : 6px;
+	box-shadow : 0px 0px 5px 5px #cccccc;
+	text-align: centre;
+}
