@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+
+
+function UploadtoAWS()
+{
+    document.Form1.action = "http://localhost:8080/Instapics/DownloadFile";
+       
+    document.Form1.submit();             
+    return true;
+}
+
+
+
+</script>
+
+</head>
+<body>  
+<form name="Form1" method="post">  
+  
+
+<input  type="submit" value="UploadtoS3Bucket" onclick="DownloadFromAWS();" />
+  
+</form>  
+</body>  
+</html>
