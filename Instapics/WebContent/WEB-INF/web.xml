@@ -1,32 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+ 
+ 
+
+<servlet>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>com.servletcrud.service.UserLoginServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+    <async-supported>true</async-supported>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/UserLoginServlet/history</url-pattern>
+    </servlet-mapping>
+ <servlet>
+        <servlet-name>DBConnection</servlet-name>
+        <servlet-class>com.servletcrud.service.DBConnection</servlet-class>
+    </servlet>
+  
     <servlet>
         <servlet-name>UserRegistration</servlet-name>
         <servlet-class>com.servletcrud.service.UserRegistration</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>UserLogin</servlet-name>
-        <servlet-class>com.servletcrud.service.UserLogin</servlet-class>
+     <servlet>
+        <servlet-name>AsyncLongRunningServlet</servlet-name>
+        <servlet-class>com.servletcrud.service.AsyncLongRunningServlet</servlet-class>
     </servlet>
+  
     <servlet>
         <servlet-name>Welcome</servlet-name>
         <servlet-class>com.servletcrud.service.Welcome</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UploadFileServlet</servlet-name>
+        <servlet-class>com.servletcrud.service.UploadFileServlet</servlet-class>
+    </servlet>
+      <servlet>
+        <servlet-name>DownloadFile</servlet-name>
+        <servlet-class>com.servletcrud.service.DownloadFile</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>DBConnection</servlet-name>
+        <url-pattern>/DBConnection</url-pattern>
+    </servlet-mapping>
+    
     <servlet-mapping>
         <servlet-name>UserRegistration</servlet-name>
         <url-pattern>/UserRegistration</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>UserLogin</servlet-name>
-        <url-pattern>/UserLogin</url-pattern>
-    </servlet-mapping>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <url-pattern>/UserLoginServlet</url-pattern>
+        </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Welcome</servlet-name>
         <url-pattern>/Welcome</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>UploadFileServlet</servlet-name>
+        <url-pattern>/UploadFileServlet/upload</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>DownloadFile</servlet-name>
+        <url-pattern>/DownloadFile/download</url-pattern>
+    </servlet-mapping>
+    
+      <servlet-mapping>
+        <servlet-name>AsyncLongRunningServlet</servlet-name>
+        <url-pattern>/AsyncLongRunningServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+
+
 </web-app>
