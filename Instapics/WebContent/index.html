@@ -1,12 +1,43 @@
-<html>  
-<body >  
+<html>
+<head>
+		<TITLE>Display file upload form to the user</TITLE>
+		<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<nav class="navbar navbar-default">
+		 <div class="container-fluid">
+		 <!-- Brand and toggle get grouped for better mobile display -->
+		 <div class="navbar-header">
+		 <button type="button" class="navbar-toggle collapsed" datatoggle="collapse"
+		data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		 <span class="sr-only">Toggle navigation</span>
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+		 </button>
+		 <a class="navbar-brand" href="#">Photo Album</a>
+		 </div>
+		 <!-- Collect the nav links, forms, and other content for toggling -->
+		 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		 <ul class="nav navbar-nav">
+		 <li class="active"><a href="http://localhost:8080/Instapics1/Upload.jsp">Upload Page </a></li>
+		 <li class="active"><a href="http://localhost:8080/Instapics1/index.html">Home </a></li>
+		 <li ><a href="http://localhost:8080/Instapics1/album.jsp">Album</a></li>
+		 </ul>
+		 </div><!-- /.navbar-collapse -->
+		 </div><!-- /.container-fluid -->
+	</nav>  
+<body>  
+<h3>
+<font color="red">Welcome New User!</font>
+</h3>
 <form action="UserRegistration" method="post">  
     <div style="text-align: center">  
-Name:<input type="text" name="name"/><br/><br/>  
-Password:<input type="password" name="password"/><br/><br/>   
+Name:<input type="text" name="name" id="name" class="form-control" required/><br/><br/>  
+Password:<input type="password" name="password" id="password" class="form-control" required/><br/><br/>   
   
 <br/><br/>  
-<input type="submit" value="register"/>  
+<input type="submit" class="btn btn-success" value="register"/>  
     </div>
 </form>
     <div style="text-align: center">

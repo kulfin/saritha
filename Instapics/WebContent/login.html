@@ -1,22 +1,59 @@
 <html> 
 <head>
+		<TITLE>Display file upload form to the user</TITLE>
+		<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+
 <script>
 
 
 
-
-
+function Login()
+{
+    document.Form1.action = "http://localhost:8080/Instapics1/UserLoginServlet/history";
+       
+    document.Form1.submit();             
+    return true;
+}
 </script>
+
+</head>
+<nav class="navbar navbar-default">
+		 <div class="container-fluid">
+		 <!-- Brand and toggle get grouped for better mobile display -->
+		 <div class="navbar-header">
+		 <button type="button" class="navbar-toggle collapsed" datatoggle="collapse"
+		data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		 <span class="sr-only">Toggle navigation</span>
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+		 </button>
+		 <a class="navbar-brand" href="#">Photo Album</a>
+		 </div>
+		 <!-- Collect the nav links, forms, and other content for toggling -->
+		 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		 <ul class="nav navbar-nav">
+		 <li class="active"><a href="index.jsp">Home </a></li>
+		 <li ><a href="album.jsp">Album</a></li>
+		 </ul>
+		 </div><!-- /.navbar-collapse -->
+		 </div><!-- /.container-fluid -->
+	</nav>  
+
+
+
 
  
 <body>  
-<form action="UserLogin" method="post">  
+<form name="Form1" method="post">  
   <div style="text-align: center"> 
-Name:<input type="text" name="name"/><br/><br/>  
-Password:<input type="password" name="password"/><br/><br/>   
+Name:<input type="text" name="name" class="form-control" required/><br/><br/>  
+Password:<input type="password" name="password" class="form-control" required/><br/><br/>   
   
 <br/><br/>  
-<input type="submit" value="login"/>  
+<input class="btn btn-success" type="submit" value="Login" onclick="Login();" />
 
   </div> 
 </form>  
