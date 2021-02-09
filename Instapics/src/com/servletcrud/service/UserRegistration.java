@@ -16,6 +16,7 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.annotation.Resource;
@@ -23,12 +24,14 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
 
-
+@WebServlet("/userRegistration")
 public class UserRegistration extends HttpServlet {
 
 
@@ -41,7 +44,7 @@ private DataSource dataSource;
    public void doPost(HttpServletRequest request, HttpServletResponse response)  
             throws ServletException, IOException {  
  PreparedStatement ps=null;
- 
+ int id=0;
 response.setContentType("text/html");  
 PrintWriter out = response.getWriter();  
 PrintWriter outWriter = response.getWriter();  
@@ -69,15 +72,17 @@ outWriter.flush();
 
      
  ps=con.prepareStatement(  
-"insert into users (name,password) values(?,?)");  
+"insert into login (name,password) values(?,?)");  
   
  
 ps.setString(1,name);  
 ps.setString(2,pass);  
  
-          
-int i=ps.executeUpdate();  
-if(i>0)  
+HttpSession session=request.getSession();   
+ps.executeUpdate();
+
+
+if(id>0)  
 out.print("You are successfully registered...");  
 
 

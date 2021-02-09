@@ -6,14 +6,14 @@ public class AWSCredentialsImpl implements AWSCredentials {
 
 	@Override
 	public String getAWSAccessKeyId() {
-		// TODO Auto-generated method stub
-		return "AKIAROPRU5I7UNS7KAAH";
+		
+		return "AKIAJBAX6ZISLRFMMBXA";
 	}
 
 	@Override
 	public String getAWSSecretKey() {
-		// TODO Auto-generated method stub
-		return "MZTYyDYbep13dutC34cbVXJ4fLvcbCHNOcSjxnht";
+		
+		return "QWQmXUhdf/hH/ixVQ27Ee1DQ9mVTDYEKsCReLtOT";
 	}
 
 }

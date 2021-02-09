@@ -23,6 +23,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.core.MediaType;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.DataFormatter;
@@ -53,17 +56,21 @@ import com.amazonaws.regions.Regions;
 		private  String key_name= "AKIARO";
 		
 		  
-		   @Override
+		   
+		   @POST
+		   @Path("/download")
+		   @javax.ws.rs.Produces(MediaType.TEXT_HTML)
 		   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		
-			   String key = "AKIAROPRU5I7UNS7KAAH";
-
+			   String key = "AKIAJBAX6ZISLRFMMBXA";
+			   
+			  
                 FileOutputStream fos=null;
                 BufferedOutputStream writer=null;
 			    String fileName = "slack.csv";
 
 
-			    String bucketName = "testbucketcreate";
+			    String bucketName = "mytestbucket23275";
 			    
 			    PrintWriter out=response.getWriter();
 			    
