@@ -15,3 +15,10 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+*.css linguist-detectable=false
+*.java linguist-detectable=true
+*.python linguist-detectable=false
+*.js linguist-detectable=false
+*.html linguist-detectable=false  
+*.xml linguist-detectable=false 
