@@ -17,5 +17,8 @@ java -jar geektrust.jar <input file full path>
 
 for example: 
 
-java -jar geektrust.jar /Users/apple/eclipse-workspace/Family.Problem/src/main/resources/input.txt
+java -jar geektrust.jar /Users/apple/eclipse-workspace/Family.Problem/src/main/resources/input.tXT
+
+This project is readily deployabale and is a geektrust challenge. Do little changes like OOPS Design and JUnit testing for all
+the modules and you are good to get a very good Score
 
