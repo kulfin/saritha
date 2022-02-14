@@ -1,4 +1,4 @@
-package com.geektrust.water.management;
+package com.waterManagement;
 
 import static org.junit.Assert.*;
 
@@ -6,69 +6,99 @@ import java.io.File;
 
 import org.junit.Test;
 
-import com.geektrust.water.management.model.Bill;
-import com.geektrust.water.management.model.Commands;
-import com.geektrust.water.management.model.Member;
-import com.geektrust.water.management.model.Rooms;
-import com.geektrust.water.management.model.Water;
-import com.geektrust.water.management.resources.WaterConstants;
-import com.geektrust.water.service.WaterManagementService;
+import com.waterManagement.model.Bill;
+import com.waterManagement.model.Commands;
+import com.waterManagement.model.Rooms;
+import com.waterManagement.model.Water;
+import com.waterManagement.resources.WaterConstants;
+import com.waterManagement.service.WaterManagementService;
+
 /**
  * Unit test for simple App.
  */
 public class WaterManagementTest 
-   
+    //extends TestCase
 {
-   
+    /**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */
     
 	WaterManagementService waterManagementService = new WaterManagementService();
-	// Water water = new Water();
+	Water water = new Water();
     WaterManagementEnum ADD_GUESTS =  WaterManagementEnum.ADD_GUESTS;
     WaterManagementEnum ALLOT_WATER =  WaterManagementEnum.ALLOT_WATER;
     WaterManagementEnum BILL =  WaterManagementEnum.BILL;
     Bill bill = new Bill();
-    Water water = new Water();
-    Member m = new Member();
     Commands commands = new Commands();
     Rooms rooms = new Rooms();
     File file = new File("src/main/java/com/waterManagement/resources");
 	String absolutePath = file.getAbsolutePath();
 	
-    @SuppressWarnings("deprecation")
-	@Test
+    @Test
     public void calculateTankerWaterCostTest(){
-    	int numberOfGuests = 8;
-    	m = waterManagementService.addGuests(numberOfGuests);
-    	System.out.println("junit value::: " +m.getTotalLitres());
-    	assertEquals(2400,m.getTotalCost(),0.02);
-    	assertEquals(16900,m.getTotalLitres(),0.02);
+    	water.setTankerWater(1000);
+    	water.getTankerWater();
+    	bill.setTankerWaterBill(1000);
+    	bill.getTankerWaterBill();
+    	assertEquals(4000,water.calculateTankerWaterCost(1500));
     }
     
-    @SuppressWarnings("deprecation")
-	@Test
+    @Test
     public void allotWaterTest(){
-    	int apartmentType = 3;
-    	String corpBoreWaterRatio ="5:4";
-    	m = waterManagementService.allotWater(apartmentType, corpBoreWaterRatio);
-    	System.out.println("junit value for allot water cost::: " +m.getTotalLitres());
-    	assertEquals(1500,m.getTotalCost(),0.02);
-    	assertEquals(1500,m.getTotalLitres(),0.02);
-    	
+    	water.allotWater("2","3:7");
+    	water.setAllottedWater(900);
+    	assertEquals(900,water.getAllottedWater());
+    }
+    
+    @Test
+    public void setCommandCountTest(){
+    	commands.setCommandCount(4);
+    	assertEquals(4,commands.getCommandCount());
+    }
+    
+	@Test
+    public void executeCommandTest(){
+    	String[] commandsList = {"ALLOT_WATER", "3", "5:4", "ADD_GUESTS", "3", "ADD_GUESTS", "5"};
+    	int index = 0;
+    	String[] result = {"3", "5:4"};
+    	assertEquals(result[0],commands.getCommands(commandsList,index)[0]);
+    }
+        
+    /*@Test
+    public void findTotalBillTest(){
+    	String[] commandsList = {"ALLOT_WATER", "3", "5:4", "ADD_GUESTS", "3", "ADD_GUESTS", "5", "BILL"};
+    	waterManagementService.findTotalBill(commandsList);
+    	assertEquals(1500,water.getAllottedWater());
+    }*/
+    @Test
+    public void setDataTest(){
+		String[] args = new String[1];
+		args[WaterConstants.ZERO] = absolutePath + "/commands.txt";
+		try {
+			WaterManagement.main(args);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+    	assertNotNull(args);
     }
     
     @Test
     public void getGuests() {
-    	int numberOfGuests = 8;
-		assertEquals(8, waterManagementService.calculateGuests());
+    	rooms.setGuests("8");
+		assertNotNull(rooms.getGuests());
 	}
     
+    @Test
+	public void getRooms() {
+    	rooms.setRooms();
+		assertEquals(3,rooms.getRooms(2));
+	}
     
     @Test
-    public void getApartmentType(){
-    	
-    	waterManagementService.getApartmentType();
-    	assertEquals(3,waterManagementService.getApartmentType());
-    }
-    
-
+	public void getMembers() {
+    	rooms.setMembers(5);
+    	assertEquals(5,rooms.getMembers());
+	}
 }
