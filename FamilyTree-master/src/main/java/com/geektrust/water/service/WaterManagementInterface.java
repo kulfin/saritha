@@ -1,6 +1,6 @@
-package com.geektrust.water.service;
+package com.waterManagement.service;
 
 public interface WaterManagementInterface {
-	public void executeCommands(String command, String[] commandList);
+	public void executeCommand(String command, String[] commandList);
 	public void calculateBill();
 }
